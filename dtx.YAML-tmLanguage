@@ -6,7 +6,10 @@ fileTypes: [dtx]
 uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
-- comment: Sequences like \$, \> and \<
-  name: constant.character.escape.ssraw
-  match: \\[$<>]
+- comment: Macro code
+  name: macrocode.dtx
+  begin: \%    \\begin{macrocode}
+  end: \%    \\end{macrocode}
+
+- include: text.tex.latex
 ...

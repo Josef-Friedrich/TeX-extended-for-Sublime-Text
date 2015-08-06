@@ -1,7 +1,7 @@
 author: Josef Friedrich
-name: MyOwn
+name: dtx
 settings:
-- settings: {background: '#FFFFFF', caret: '#000000', foreground: '#000000', invisibles: '#BFBFBF',
+- settings: {background: '#FFFFFF', caret: '#000000', foreground: '#110000', invisibles: '#BFBFBF',
     lineHighlight: '#00000012', selection: '#C3DCFF'}
 - name: Comment
   scope: comment
