@@ -1,105 +1,98 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+---
 author: Josef Friedrich
 name: dtx
 settings:
-- settings: {background: '#FFFFFF', caret: '#000000', foreground: '#110000', invisibles: '#BFBFBF',
-    lineHighlight: '#00000012', selection: '#C3DCFF'}
+- settings: {activeGuide: '#9D550FB0', background: '#272822', bracketContentsForeground: '#F8F8F2A5',
+    bracketContentsOptions: underline, bracketsForeground: '#F8F8F2A5', bracketsOptions: underline,
+    caret: '#F8F8F0', findHighlight: '#FFE792', findHighlightForeground: '#000000',
+    foreground: '#F8F8F2', invisibles: '#3B3A32', lineHighlight: '#3E3D32', selection: '#49483E',
+    selectionBorder: '#222218', tagsOptions: stippled_underline}
 - name: Comment
   scope: comment
-  settings: {fontStyle: '', foreground: '#00B418'}
-- name: Variable
-  scope: variable
-  settings: {fontStyle: italic, foreground: '#FF06FF'}
-- name: Keyword
-  scope: keyword
-  settings: {fontStyle: bold, foreground: '#0100B6'}
-- name: Number
-  scope: constant.numeric
-  settings: {fontStyle: italic, foreground: '#CD0000'}
-- name: User-defined constant
-  scope: constant
-  settings: {fontStyle: italic, foreground: '#C5060B'}
-- name: Built-in constant
-  scope: constant.language
-  settings: {fontStyle: italic, foreground: '#585CF6'}
+  settings: {foreground: '#75715E'}
 - name: String
   scope: string
-  settings: {fontStyle: '', foreground: '#D80800'}
-- name: String interpolation
-  scope: constant.character.escape, string source
-  settings: {fontStyle: '', foreground: '#26B31A'}
-- name: Preprocessor line
-  scope: meta.preprocessor
-  settings: {fontStyle: '', foreground: '#1A921C'}
-- name: Preprocessor directive
-  scope: keyword.control.import
-  settings: {fontStyle: bold, foreground: '#0C450D'}
-- name: Function name
-  scope: entity.name.function, keyword.other.name-of-parameter.objc
-  settings: {fontStyle: bold, foreground: '#0000A2'}
-- name: Type name
-  scope: entity.name.type
-  settings: {fontStyle: italic}
-- name: Inherited class name
+  settings: {foreground: '#E6DB74'}
+- name: Number
+  scope: constant.numeric
+  settings: {foreground: '#AE81FF'}
+- name: Built-in constant
+  scope: constant.language
+  settings: {foreground: '#AE81FF'}
+- name: User-defined constant
+  scope: constant.character, constant.other
+  settings: {foreground: '#AE81FF'}
+- name: Variable
+  scope: variable
+  settings: {fontStyle: ''}
+- name: Keyword
+  scope: keyword
+  settings: {foreground: '#F92672'}
+- name: Storage
+  scope: storage
+  settings: {fontStyle: '', foreground: '#F92672'}
+- name: Storage type
+  scope: storage.type
+  settings: {fontStyle: italic, foreground: '#66D9EF'}
+- name: Class name
+  scope: entity.name.class
+  settings: {fontStyle: underline, foreground: '#A6E22E'}
+- name: Inherited class
   scope: entity.other.inherited-class
-  settings: {fontStyle: italic}
-- name: Function parameter
+  settings: {fontStyle: italic underline, foreground: '#A6E22E'}
+- name: Function name
+  scope: entity.name.function
+  settings: {fontStyle: '', foreground: '#A6E22E'}
+- name: Function argument
   scope: variable.parameter
-  settings: {fontStyle: italic}
-- name: Function argument and result types
-  scope: storage.type.method
-  settings: {fontStyle: '', foreground: '#70727E'}
-- name: Section
-  scope: meta.section entity.name.section, declaration.section entity.name.section
-  settings: {fontStyle: italic}
+  settings: {fontStyle: italic, foreground: '#FD971F'}
+- name: Tag name
+  scope: entity.name.tag
+  settings: {fontStyle: '', foreground: '#F92672'}
+- name: Tag attribute
+  scope: entity.other.attribute-name
+  settings: {fontStyle: '', foreground: '#A6E22E'}
 - name: Library function
   scope: support.function
-  settings: {fontStyle: bold, foreground: '#3C4C72'}
-- name: Library object
-  scope: support.class, support.type
-  settings: {fontStyle: bold, foreground: '#6D79DE'}
+  settings: {fontStyle: '', foreground: '#66D9EF'}
 - name: Library constant
   scope: support.constant
-  settings: {fontStyle: bold, foreground: '#06960E'}
+  settings: {fontStyle: '', foreground: '#66D9EF'}
+- name: Library class/type
+  scope: support.type, support.class
+  settings: {fontStyle: italic, foreground: '#66D9EF'}
 - name: Library variable
-  scope: support.variable
-  settings: {fontStyle: bold, foreground: '#21439C'}
-- name: 'JS: Operator'
-  scope: keyword.operator.js
-  settings: {foreground: '#687687'}
+  scope: support.other.variable
+  settings: {fontStyle: ''}
 - name: Invalid
   scope: invalid
-  settings: {background: '#990000', foreground: '#FFFFFF'}
-- name: Invalid trailing whitespace
-  scope: invalid.deprecated.trailing-whitespace
-  settings: {background: '#FFD0D0'}
-- name: Embedded source
-  scope: text source, string.unquoted
-  settings: {background: '#427FF530'}
-- name: Markup XML declaration
-  scope: meta.xml-processing, declaration.xml-processing
-  settings: {fontStyle: '', foreground: '#68685B'}
-- name: Markup DOCTYPE
-  scope: meta.doctype, declaration.doctype
-  settings: {fontStyle: '', foreground: '#888888'}
-- name: Markup DTD
-  scope: meta.doctype.DTD, declaration.doctype.DTD
-  settings: {fontStyle: italic}
-- name: Markup tag
-  scope: meta.tag, declaration.tag
-  settings: {fontStyle: '', foreground: '#1C02FF'}
-- name: Markup name of tag
-  scope: entity.name.tag
-  settings: {fontStyle: bold}
-- name: Markup tag attribute
-  scope: entity.other.attribute-name
-  settings: {fontStyle: italic}
-- name: 'Markup: Heading'
-  scope: markup.heading
-  settings: {fontStyle: bold, foreground: '#0C07FF'}
-- name: 'Markup: Quote'
-  scope: markup.quote
-  settings: {fontStyle: italic, foreground: '#000000'}
-- name: 'Markup: List'
-  scope: markup.list
-  settings: {foreground: '#B90690'}
+  settings: {background: '#F92672', fontStyle: '', foreground: '#F8F8F0'}
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings: {background: '#AE81FF', foreground: '#F8F8F0'}
+- name: JSON String
+  scope: meta.structure.dictionary.json string.quoted.double.json
+  settings: {foreground: '#CFCFC2'}
+- name: diff.header
+  scope: meta.diff, meta.diff.header
+  settings: {foreground: '#75715E'}
+- name: diff.deleted
+  scope: markup.deleted
+  settings: {foreground: '#F92672'}
+- name: diff.inserted
+  scope: markup.inserted
+  settings: {foreground: '#A6E22E'}
+- name: diff.changed
+  scope: markup.changed
+  settings: {foreground: '#E6DB74'}
+- scope: constant.numeric.line-number.find-in-files - match
+  settings: {foreground: '#AE81FFA0'}
+- scope: entity.name.filename.find-in-files
+  settings: {foreground: '#E6DB74'}
+
+
+- scope: content.macrocode.dtx
+  settings: {background: '#000000'}
 uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
+...

@@ -12,13 +12,41 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>\%    \\begin{macrocode}</string>
+			<string>\%&lt;\*lua&gt;</string>
 			<key>comment</key>
-			<string>Macro code</string>
+			<string>Lua file</string>
 			<key>end</key>
-			<string>\%    \\end{macrocode}</string>
+			<string>\%&lt;/lua&gt;</string>
 			<key>name</key>
-			<string>macrocode.dtx</string>
+			<string>file.lua.dtx</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\%    \\begin{macrocode}.*$</string>
+					<key>comment</key>
+					<string>Macro code</string>
+					<key>contentName</key>
+					<string>content.macrocode.dtx</string>
+					<key>end</key>
+					<string>\%    \\end{macrocode}</string>
+					<key>name</key>
+					<string>macrocode.dtx</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.lua</string>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>.</string>
+							<key>name</key>
+							<string>luacode.dtx</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>include</key>
