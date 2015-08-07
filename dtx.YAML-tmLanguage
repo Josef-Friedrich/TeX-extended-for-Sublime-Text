@@ -6,6 +6,24 @@ fileTypes: [dtx]
 uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
+
+##
+# TeX Primitive Control Sequences
+##
+
+# Box family
+- comment: Box family (TeX Primitive Control Sequences)
+  match: \\(badness|box|boxmaxdepth|cleaders|copy|dp|everyhbox|everyvbox|hbadness|hbox|hfuzz|hrule|ht|lastbox|leaders|overfullrule|prevdepth|setbox|unhbox|unhcopy|unvbox|unvcopy|vbadness|vbox|vfuzz|vrule|vtop|wd|xleaders)\b
+  captures:
+    '0': {name: support.function.tex.primitive.cs.family.box.tex}
+
+# Macro family
+- comment: Macro family (TeX Primitive Control Sequences)
+  match: \\(afterassignment|aftergroup|begingroup|csname|def|edef|endcsname|endgroup|expandafter|futurelet|gdef|global|globaldefs|let|long|noexpand|outer|relax|the|xdef)\b
+  captures:
+    '0': {name: support.function.tex.primitive.cs.family.macro.tex}
+
+
 - comment: Lua file
   name: file.lua.dtx
   begin: \%<\*lua>

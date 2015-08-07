@@ -18,5 +18,14 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
         { "keys": ["f12"], "command": "convert_file" }
     ]
 
+# Useful documentation
 
+## tmLanguage
 
+* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html
+* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html
+* http://www.geocities.jp/kosako3/oniguruma/doc/RE.txt
+
+## tmTheme
+
+* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/color_schemes.html

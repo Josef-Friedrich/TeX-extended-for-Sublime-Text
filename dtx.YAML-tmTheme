@@ -91,6 +91,17 @@ settings:
 - scope: entity.name.filename.find-in-files
   settings: {foreground: '#E6DB74'}
 
+- scope: punctuation.definition.keyword.tex
+  settings: {foreground: '#a9ffa7'}
+
+- scope: support.function.general.tex
+  settings: {foreground: '#d07dff'}
+
+- scope: support.function.tex.primitive.cs.family.box.tex
+  settings: {foreground: '#ff997d'}
+
+- scope: support.function.tex.primitive.cs.family.macro.tex
+  settings: {foreground: '#faff6e'}
 
 - scope: content.macrocode.dtx
   settings: {background: '#000000'}

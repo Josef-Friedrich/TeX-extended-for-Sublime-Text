@@ -11,6 +11,34 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.tex.primitive.cs.family.box.tex</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Box family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(badness|box|boxmaxdepth|cleaders|copy|dp|everyhbox|everyvbox|hbadness|hbox|hfuzz|hrule|ht|lastbox|leaders|overfullrule|prevdepth|setbox|unhbox|unhcopy|unvbox|unvcopy|vbadness|vbox|vfuzz|vrule|vtop|wd|xleaders)\b</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.tex.primitive.cs.family.macro.tex</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Macro family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(afterassignment|aftergroup|begingroup|csname|def|edef|endcsname|endgroup|expandafter|futurelet|gdef|global|globaldefs|let|long|noexpand|outer|relax|the|xdef)\b</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\%&lt;\*lua&gt;</string>
 			<key>comment</key>

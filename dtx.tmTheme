@@ -377,6 +377,42 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>punctuation.definition.keyword.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a9ffa7</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.general.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d07dff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.tex.primitive.cs.family.box.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ff997d</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.tex.primitive.cs.family.macro.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#faff6e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>content.macrocode.dtx</string>
 			<key>settings</key>
 			<dict>
