@@ -12,4 +12,4 @@ https://github.com/facelessuser/ScopeHunter
 
 # Key bindings for development packages.
 
-Open consoloe ctrl+` then type sublime.log_commands(True)
+Open console `` ctrl+` `` then type `sublime.log_commands(True)`
