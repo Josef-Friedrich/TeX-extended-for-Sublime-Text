@@ -47,7 +47,7 @@
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>name</string>
+			<string>comment</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -107,6 +107,19 @@
 			<dict>
 				<key>fontStyle</key>
 				<string>underline</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function argument</string>
+			<key>scope</key>
+			<string>variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#FD971F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -185,19 +198,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Function argument</string>
-			<key>scope</key>
-			<string>variable.parameter</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#FD971F</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Tag name</string>
 			<key>scope</key>
 			<string>entity.name.tag</string>
@@ -268,6 +268,15 @@
 			<dict>
 				<key>fontStyle</key>
 				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>support.function.general.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#d07dff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -378,15 +387,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#a9ffa7</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>support.function.general.tex</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#d07dff</string>
 			</dict>
 		</dict>
 		<dict>

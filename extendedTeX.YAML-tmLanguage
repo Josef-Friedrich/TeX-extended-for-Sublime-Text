@@ -12,97 +12,78 @@ patterns:
 # http://www.tug.org/utilities/plain/cseq.html
 ##
 
-# Box family
 - comment: Box family (TeX Primitive Control Sequences)
   name: support.function.primitive.box.tex
   match: \\(badness|box|boxmaxdepth|cleaders|copy|dp|everyhbox|everyvbox|hbadness|hbox|hfuzz|hrule|ht|lastbox|leaders|overfullrule|prevdepth|setbox|unhbox|unhcopy|unvbox|unvcopy|vbadness|vbox|vfuzz|vrule|vtop|wd|xleaders)\b
 
-# Character family
 - comment: Character family (TeX Primitive Control Sequences)
   name: support.function.primitive.character.tex
   match: \\(accent|catcode|char|chardef|endlinechar|escapechar|lccode|lowercase|newlinechar|number|romannumeral|sfcode|string|uccode|uppercase)\b
 
-# Debugging family
 - comment: Debugging family (TeX Primitive Control Sequences)
   name: support.function.primitive.debugging.tex
   match: \\(batchmode|errhelp|errmessage|errorcontextlines|errorstopmode|meaning|message|nonstopmode|pausing|scrollmode|show|showbox|showboxbreadth|showboxdepth|showlists|showthe|tracingcommands|tracinglostchars|tracingmacros|tracingonline|tracingoutput|tracingpages|tracingparagraphs|tracingrestores|tracingstats)\b
 
-# File I/0 family
 - comment: File I/0 family (TeX Primitive Control Sequences)
   name: support.function.primitive.fileio.tex
   match: \\(closein|closeout|endinput|immediate|input|inputlineno|openin|openout|output|read|shipout|special|write)\b
 
-# Fonts family
 - comment: Fonts family (TeX Primitive Control Sequences)
   name: support.function.primitive.fonts.tex
   match: \\(font|fontdimen|fontname|nullfont)\b
 
-# Glue family
 - comment: Glue family (TeX Primitive Control Sequences)
   name: support.function.primitive.glue.tex
   match: \\(hfil|hfill|hfilneg|hskip|hss|lastskip|unskip|vfil|vfill|vfilneg|vskip|vss)\b
 
-# Hyphenation family
 - comment: Hyphenation family (TeX Primitive Control Sequences)
   name: support.function.primitive.hyphenation.tex
   match: \\(defaulthyphenchar|discretionary|hyphenation|hyphenchar|language|lefthyphenmin|patterns|righthyphenmin|setlanguage|uchyph)\b
 
-# Inserts family
 - comment: Inserts family (TeX Primitive Control Sequences)
   name: support.function.primitive.inserts.tex
   match: \\(holdinginserts|insert|insertpenalties|splitbotmark|splitfirstmark|splitmaxdepth|splittopskip|vsplit)\b
 
-# Job family
 - comment: Job family (TeX Primitive Control Sequences)
   name: support.function.primitive.job.tex
   match: \\(day|deadcycles|dump|end|everyjob|jobname|mag|maxdeadcycles|month|time|year)\b
 
-# Kern family
 - comment: Kern family (TeX Primitive Control Sequences)
   name: support.function.primitive.kern.tex
   match: \\(kern|lastkern|lower|moveleft|moveright|raise|unkern)\b
 
-# Logic family
 - comment: Logic family (TeX Primitive Control Sequences)
   name: support.function.primitive.logic.tex
   match: \\(else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b
 
-# Macro family
 - comment: Macro family (TeX Primitive Control Sequences)
   name: support.function.primitive.macro.tex
   match: \\(afterassignment|aftergroup|begingroup|csname|def|edef|endcsname|endgroup|expandafter|futurelet|gdef|global|globaldefs|let|long|noexpand|outer|relax|the|xdef)\b
 
-# Marks family
 - comment: Marks family (TeX Primitive Control Sequences)
   name: support.function.primitive.marks.tex
   match: \\(botmark|firstmark|mark|topmark)\b
 
-# Math family
 - comment: Math family (TeX Primitive Control Sequences)
   name: support.function.primitive.math.tex
   match: \\(above|abovedisplayshortskip|abovedisplayskip|abovewithdelims|atop|atopwithdelims|belowdisplayshortskip|belowdisplayskip|binoppenalty|defaultskewchar|delcode|delimiter|delimiterfactor|delimitershortfall|displayindent|displaylimits|displaystyle|displaywidowpenalty|displaywidth|eqno|everydisplay|everymath|fam|left|leqno|limits|mathaccent|mathbin|mathchar|mathchardef|mathchoice|mathclose|mathcode|mathinner|mathop|mathopen|mathord|mathpunct|mathrel|mathsurround|medmuskip|mkern|mskip|muskip|muskipdef|nolimits|nonscript|nulldelimiterspace|over|overline|overwithdelims|postdisplaypenalty|predisplaypenalty|predisplaysize|radical|relpenalty|right|scriptfont|scriptscriptfont|scriptscriptstyle|scriptspace|scriptstyle|skewchar|textfont|textstyle|thickmuskip|thinmuskip|underline|vcenter)\b
 
-# Page family
 - comment: Page family (TeX Primitive Control Sequences)
   name: support.function.primitive.page.tex
   match: \\(hoffset|maxdepth|pagedepth|pagefilllstretch|pagefillstretch|pagefilstretch|pagegoal|pageshrink|pagestretch|pagetotal|topskip|voffset|vsize)\b
 
-# Paragraph family
 - comment: Paragraph family (TeX Primitive Control Sequences)
   name: support.function.primitive.paragraph.tex
   match: \\(adjdemerits|baselineskip|doublehyphendemerits|emergencystretch|everypar|finalhyphendemerits|hangafter|hangindent|hsize|ignorespaces|indent|leftskip|lineskip|lineskiplimit|looseness|noboundary|noindent|par|parfillskip|parindent|parshape|parskip|pretolerance|prevgraf|rightskip|spacefactor|spaceskip|tolerance|vadjust|xspaceskip)\b
 
-# Penalties family
 - comment: Penalties family (TeX Primitive Control Sequences)
   name: support.function.primitive.penalties.tex
   match: \\(brokenpenalty|clubpenalty|exhyphenpenalty|floatingpenalty|hyphenpenalty|interlinepenalty|lastpenalty|linepenalty|outputpenalty|penalty|unpenalty|widowpenalty)\b
 
-# Registers family
 - comment: Registers family (TeX Primitive Control Sequences)
   name: support.function.primitive.registers.tex
   match: \\(advance|count|countdef|dimen|dimendef|divide|multiply|skip|skipdef|toks|toksdef)\b
 
-# Tables family
 - comment: Tables family (TeX Primitive Control Sequences)
   name: support.function.primitive.tables.tex
   match: \\(cr|crcr|everycr|halign|noalign|omit|span|tabskip|valign)\b
@@ -111,20 +92,34 @@ patterns:
 # General control sequences
 ##
 
-# at \CC@command@command
 - comment: Control sequences like \CC@command@command
   name: support.function.general.at.tex
   match: \\(?=[\\A-Za-z]*[@])[A-Za-z@]+
 
-# upperlower \CommandCommand
 - comment: Control sequences like \CommandCommand
   name: support.function.general.upperlower.tex
   match: \\(?=[\\a-z]*[A-Z])[A-Za-z]+
 
-# lower \command
 - comment: Control sequences like \command
   name: support.function.general.lower.tex
   match: \\[a-z]+
+
+##
+# Comments
+##
+
+- name: comment.line.percentage.semicolon.texshop.tex
+  match: (%:).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.tex}
+
+- name: comment.line.percentage.directive.texshop.tex
+  match: ^%!TEX (\S*) =\s*(.*)\s*$
+
+- name: comment.line.percentage.tex
+  match: (%).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.tex}
 
 ##
 # LuaTeX

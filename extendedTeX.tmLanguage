@@ -187,6 +187,40 @@
 			<string>support.function.general.lower.tex</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.tex</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(%:).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.percentage.semicolon.texshop.tex</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^%!TEX (\S*) =\s*(.*)\s*$</string>
+			<key>name</key>
+			<string>comment.line.percentage.directive.texshop.tex</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.tex</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(%).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.percentage.tex</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\\directlua\{</string>
 			<key>comment</key>
