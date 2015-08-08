@@ -413,6 +413,17 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>markup.raw.verbatim.latex</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#444</string>
+				<key>foreground</key>
+				<string>#ccc</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>content.macrocode.dtx</string>
 			<key>settings</key>
 			<dict>

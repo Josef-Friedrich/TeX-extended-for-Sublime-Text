@@ -103,6 +103,11 @@ settings:
 - scope: support.function.tex.primitive.cs.family.macro.tex
   settings: {foreground: '#faff6e'}
 
+
+- scope: markup.raw.verbatim.latex
+  settings: {foreground: '#ccc', background: '#444'}
+
+
 - scope: content.macrocode.dtx
   settings: {background: '#000000'}
 uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
