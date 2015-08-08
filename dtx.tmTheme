@@ -47,7 +47,7 @@
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>comment</string>
+			<string>name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -106,7 +106,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string></string>
+				<string>underline</string>
 			</dict>
 		</dict>
 		<dict>
@@ -127,8 +127,6 @@
 			<string>storage</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#F92672</string>
 			</dict>
@@ -231,8 +229,6 @@
 			<string>support.function</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#66D9EF</string>
 			</dict>
@@ -394,21 +390,245 @@
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Box family (TeX Primitive Control Sequences)</string>
 			<key>scope</key>
-			<string>support.function.tex.primitive.cs.family.box.tex</string>
+			<string>support.function.primitive.box.tex</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ff997d</string>
+				<string>#626D1D</string>
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Character family (TeX Primitive Control Sequences)</string>
 			<key>scope</key>
-			<string>support.function.tex.primitive.cs.family.macro.tex</string>
+			<string>support.function.primitive.character.tex</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#faff6e</string>
+				<string>#16522C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Debugging family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.debugging.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#EE9987</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>File I/0 family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.fileio.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#763A7D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fonts family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.fonts.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#712C1E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Glue family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.glue.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5D2463</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Hyphenation family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.hyphenation.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#869334</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Inserts family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.inserts.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#82C99D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Job family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.job.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3F8A5B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kern family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.kern.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#EDFAA2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Logic family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.logic.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#62AD7E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Macro family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.macro.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#276E41</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Marks family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.marks.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ABB954</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Math family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.math.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#965A9C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Page family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.page.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BE6856</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Paragraph family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.paragraph.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B57ABC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Penalties family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.penalties.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#974635</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Registers family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.registers.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#D9E784</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tables family (TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive.tables.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFB5A5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Control sequences like \CC@command@command</string>
+			<key>scope</key>
+			<string>support.function.general.at.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#BE8656</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Control sequences like \command</string>
+			<key>scope</key>
+			<string>support.function.general.lower.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Control sequences like \CommandCommand</string>
+			<key>scope</key>
+			<string>support.function.general.upperlower.tex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#0F0</string>
 			</dict>
 		</dict>
 		<dict>

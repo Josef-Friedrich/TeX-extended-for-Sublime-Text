@@ -11,32 +11,203 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.tex.primitive.cs.family.box.tex</string>
-				</dict>
-			</dict>
 			<key>comment</key>
 			<string>Box family (TeX Primitive Control Sequences)</string>
 			<key>match</key>
 			<string>\\(badness|box|boxmaxdepth|cleaders|copy|dp|everyhbox|everyvbox|hbadness|hbox|hfuzz|hrule|ht|lastbox|leaders|overfullrule|prevdepth|setbox|unhbox|unhcopy|unvbox|unvcopy|vbadness|vbox|vfuzz|vrule|vtop|wd|xleaders)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.box.tex</string>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>support.function.tex.primitive.cs.family.macro.tex</string>
-				</dict>
-			</dict>
+			<key>comment</key>
+			<string>Character family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(accent|catcode|char|chardef|endlinechar|escapechar|lccode|lowercase|newlinechar|number|romannumeral|sfcode|string|uccode|uppercase)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.character.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Debugging family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(batchmode|errhelp|errmessage|errorcontextlines|errorstopmode|meaning|message|nonstopmode|pausing|scrollmode|show|showbox|showboxbreadth|showboxdepth|showlists|showthe|tracingcommands|tracinglostchars|tracingmacros|tracingonline|tracingoutput|tracingpages|tracingparagraphs|tracingrestores|tracingstats)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.debugging.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>File I/0 family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(closein|closeout|endinput|immediate|input|inputlineno|openin|openout|output|read|shipout|special|write)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.fileio.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Fonts family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(font|fontdimen|fontname|nullfont)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.fonts.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Glue family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(hfil|hfill|hfilneg|hskip|hss|lastskip|unskip|vfil|vfill|vfilneg|vskip|vss)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.glue.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hyphenation family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(defaulthyphenchar|discretionary|hyphenation|hyphenchar|language|lefthyphenmin|patterns|righthyphenmin|setlanguage|uchyph)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.hyphenation.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Inserts family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(holdinginserts|insert|insertpenalties|splitbotmark|splitfirstmark|splitmaxdepth|splittopskip|vsplit)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.inserts.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Job family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(day|deadcycles|dump|end|everyjob|jobname|mag|maxdeadcycles|month|time|year)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.job.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Kern family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(kern|lastkern|lower|moveleft|moveright|raise|unkern)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.kern.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Logic family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.logic.tex</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Macro family (TeX Primitive Control Sequences)</string>
 			<key>match</key>
 			<string>\\(afterassignment|aftergroup|begingroup|csname|def|edef|endcsname|endgroup|expandafter|futurelet|gdef|global|globaldefs|let|long|noexpand|outer|relax|the|xdef)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.macro.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Marks family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(botmark|firstmark|mark|topmark)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.marks.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Math family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(above|abovedisplayshortskip|abovedisplayskip|abovewithdelims|atop|atopwithdelims|belowdisplayshortskip|belowdisplayskip|binoppenalty|defaultskewchar|delcode|delimiter|delimiterfactor|delimitershortfall|displayindent|displaylimits|displaystyle|displaywidowpenalty|displaywidth|eqno|everydisplay|everymath|fam|left|leqno|limits|mathaccent|mathbin|mathchar|mathchardef|mathchoice|mathclose|mathcode|mathinner|mathop|mathopen|mathord|mathpunct|mathrel|mathsurround|medmuskip|mkern|mskip|muskip|muskipdef|nolimits|nonscript|nulldelimiterspace|over|overline|overwithdelims|postdisplaypenalty|predisplaypenalty|predisplaysize|radical|relpenalty|right|scriptfont|scriptscriptfont|scriptscriptstyle|scriptspace|scriptstyle|skewchar|textfont|textstyle|thickmuskip|thinmuskip|underline|vcenter)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.math.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Page family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(hoffset|maxdepth|pagedepth|pagefilllstretch|pagefillstretch|pagefilstretch|pagegoal|pageshrink|pagestretch|pagetotal|topskip|voffset|vsize)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.page.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Paragraph family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(adjdemerits|baselineskip|doublehyphendemerits|emergencystretch|everypar|finalhyphendemerits|hangafter|hangindent|hsize|ignorespaces|indent|leftskip|lineskip|lineskiplimit|looseness|noboundary|noindent|par|parfillskip|parindent|parshape|parskip|pretolerance|prevgraf|rightskip|spacefactor|spaceskip|tolerance|vadjust|xspaceskip)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.paragraph.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Penalties family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(brokenpenalty|clubpenalty|exhyphenpenalty|floatingpenalty|hyphenpenalty|interlinepenalty|lastpenalty|linepenalty|outputpenalty|penalty|unpenalty|widowpenalty)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.penalties.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Registers family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(advance|count|countdef|dimen|dimendef|divide|multiply|skip|skipdef|toks|toksdef)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.registers.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Tables family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(cr|crcr|everycr|halign|noalign|omit|span|tabskip|valign)\b</string>
+			<key>name</key>
+			<string>support.function.primitive.tables.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control sequences like \CC@command@command</string>
+			<key>match</key>
+			<string>(\\)(?=[@])[A-Za-z@]+</string>
+			<key>name</key>
+			<string>support.function.general.at.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control sequences like \CommandCommand</string>
+			<key>match</key>
+			<string>(\\)[A-Z][A-Za-z]+</string>
+			<key>name</key>
+			<string>support.function.general.upperlower.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control sequences like \command</string>
+			<key>match</key>
+			<string>(\\)[a-z]+</string>
+			<key>name</key>
+			<string>support.function.general.lower.tex</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\\directlua\{</string>
+			<key>comment</key>
+			<string>\directlua</string>
+			<key>contentName</key>
+			<string>support.function.lua.content.luatex</string>
+			<key>end</key>
+			<string>\}</string>
+			<key>name</key>
+			<string>support.function.lua.luatex</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.lua</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>support.function.lua.embedded.luatex</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -67,8 +238,6 @@
 							<string>source.lua</string>
 						</dict>
 						<dict>
-							<key>match</key>
-							<string>.</string>
 							<key>name</key>
 							<string>luacode.dtx</string>
 						</dict>

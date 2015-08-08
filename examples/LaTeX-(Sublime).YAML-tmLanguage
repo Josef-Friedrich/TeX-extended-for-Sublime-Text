@@ -40,11 +40,6 @@ patterns:
 - comment: this works OK with all kinds of crazy stuff as long as section is one line
   name: meta.function.section.latex
   contentName: entity.name.section.latex
-  begin: "(?x)\n(\t\t\t\t\t\t\t\t\t\t\t\t\t# Capture 1\n\t(\\\\)\t\t\t\t\t\t\t\t\t\
-    \t\t# Marker\n\t(?:\n\t\t(?:sub){0,2}section\t\t\t\t\t\t\t# Functions\n\t  | (?:sub)?paragraph\n\
-    \t  | chapter|part|addpart\n\t  | addchap|addsec|minisec\n\t)\n\t(?:\\*)?\t\t\t\
-    \t\t\t\t\t\t\t\t# Optional Unnumbered\n)\n(?:\n\t(\\[)([^\\[]*?)(\\])\t\t\t\t\t\
-    \t\t\t# Optional Title\n)??\n(\\{)\t\t\t\t\t\t\t\t\t\t\t\t# Opening Bracket"
   beginCaptures:
     '1': {name: support.function.section.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -146,16 +141,6 @@ patterns:
     '5': {name: punctuation.definition.arguments.end.latex}
 - name: meta.function.environment.math.latex
   contentName: string.other.math.block.environment.latex
-  begin: "(?x)\n(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n((\\\\)begin)\t\
-    \t\t\t\t\t\t\t\t# Marker - Function\n(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\
-    \t(\n\t\t(?:\n\t\t\talign|equation|eqnarray\t\t\t# Argument\n\t\t  | multline|aligned|alignat\n\
-    \t\t  | split|gather|gathered\n\t\t)\n\t\t(?:\\*)?\t\t\t\t\t\t\t\t# Optional Unnumbered\n\
-    \t)\n(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n(\\s*\\n)?\t\t\t\t# Match to end\
-    \ of line absent of content"
-  end: "(?x)\n(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n((\\\\)end)\t\t\t\
-    \t\t\t\t\t\t# Marker - Function\n(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t(\\\
-    4)\t\t\t\t# Previous capture from begin\n(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\
-    (?:\\s*\\n)?\t\t\t\t# Match to end of line absent of content"
   captures:
     '1': {name: support.function.be.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -166,14 +151,6 @@ patterns:
   - include: $base
 - name: meta.function.environment.tabular.latex
   contentName: meta.data.environment.tabular.latex
-  begin: "(?x)\n(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n((\\\\)begin)\t\
-    \t\t\t\t\t\t\t\t# Marker - Function\n(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\
-    \t(array|tabular[xy*]?)\n(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n(\\s*\\n)?\t\
-    \t\t\t# Match to end of line absent of content"
-  end: "(?x)\n(?:\\s*)\t\t\t\t\t\t\t\t\t\t# Optional whitespace\n((\\\\)end)\t\t\t\
-    \t\t\t\t\t\t# Marker - Function\n(\\{)\t\t\t\t\t\t\t\t\t\t# Open Bracket\n\t(\\\
-    4)\t\t\t\t# Previous capture from begin\n(\\})\t\t\t\t\t\t\t\t\t\t# Close Bracket\n\
-    (?:\\s*\\n)?\t\t\t\t# Match to end of line absent of content"
   captures:
     '1': {name: support.function.be.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -302,12 +279,6 @@ patterns:
     '0': {name: keyword.other.item.latex}
     '1': {name: punctuation.definition.keyword.latex}
 - name: meta.citation.latex
-  begin: "(?x)\n(\n\t(\\\\)\t\t\t\t\t\t\t\t\t\t# Marker\n\t(?:foot)?(?:full)?(?:no)?(?:short)?\t\
-    \t# Function Name\n\t[cC]ite\n\t(?:al)?(?:t|p|author|year(?:par)?|title)?[ANP]*\n\
-    \t\\*?\t\t\t\t\t\t\t\t\t\t\t# Optional Unabreviated\n)\n(?:(\\[)[^\\]]*(\\]))?\t\
-    \t\t\t\t\t\t\t# Optional\n(?:(\\[)[^\\]]*(\\]))?\t\t\t\t\t\t\t\t#   Arguments\n\
-    (\\{)\t\t\t\t\t\t\t\t\t\t\t# Opening Bracket"
-  end: \}
   endCaptures:
     '0': {name: punctuation.definition.arguments.latex}
   captures:

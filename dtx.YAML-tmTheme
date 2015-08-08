@@ -9,7 +9,7 @@ settings:
     foreground: '#F8F8F2', invisibles: '#3B3A32', lineHighlight: '#3E3D32', selection: '#49483E',
     selectionBorder: '#222218', tagsOptions: stippled_underline}
 - name: Comment
-  scope: comment
+  scope: name
   settings: {foreground: '#75715E'}
 - name: String
   scope: string
@@ -25,13 +25,13 @@ settings:
   settings: {foreground: '#AE81FF'}
 - name: Variable
   scope: variable
-  settings: {fontStyle: ''}
+  settings: {fontStyle: underline}
 - name: Keyword
   scope: keyword
   settings: {foreground: '#F92672'}
 - name: Storage
   scope: storage
-  settings: {fontStyle: '', foreground: '#F92672'}
+  settings: {foreground: '#F92672'}
 - name: Storage type
   scope: storage.type
   settings: {fontStyle: italic, foreground: '#66D9EF'}
@@ -55,7 +55,7 @@ settings:
   settings: {fontStyle: '', foreground: '#A6E22E'}
 - name: Library function
   scope: support.function
-  settings: {fontStyle: '', foreground: '#66D9EF'}
+  settings: {foreground: '#66D9EF'}
 - name: Library constant
   scope: support.constant
   settings: {fontStyle: '', foreground: '#66D9EF'}
@@ -97,16 +97,127 @@ settings:
 - scope: support.function.general.tex
   settings: {foreground: '#d07dff'}
 
-- scope: support.function.tex.primitive.cs.family.box.tex
-  settings: {foreground: '#ff997d'}
+##
+# TeX Primitive Control Sequences
+# http://www.tug.org/utilities/plain/cseq.html
+##
 
-- scope: support.function.tex.primitive.cs.family.macro.tex
-  settings: {foreground: '#faff6e'}
+# Box family
+- name: Box family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.box.tex
+  settings: {foreground: '#626D1D'}
 
+# Character family
+- name: Character family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.character.tex
+  settings: {foreground: '#16522C'}
+
+# Debugging family
+- name: Debugging family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.debugging.tex
+  settings: {foreground: '#EE9987'}
+
+# File I/0 family
+- name: File I/0 family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.fileio.tex
+  settings: {foreground: '#763A7D'}
+
+# Fonts family
+- name: Fonts family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.fonts.tex
+  settings: {foreground: '#712C1E'}
+
+# Glue family
+- name: Glue family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.glue.tex
+  settings: {foreground: '#5D2463'}
+
+# Hyphenation family
+- name: Hyphenation family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.hyphenation.tex
+  settings: {foreground: '#869334'}
+
+# Inserts family
+- name: Inserts family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.inserts.tex
+  settings: {foreground: '#82C99D'}
+
+# Job family
+- name: Job family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.job.tex
+  settings: {foreground: '#3F8A5B'}
+
+# Kern family
+- name: Kern family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.kern.tex
+  settings: {foreground: '#EDFAA2'}
+
+# Logic family
+- name: Logic family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.logic.tex
+  settings: {foreground: '#62AD7E'}
+
+# Macro family
+- name: Macro family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.macro.tex
+  settings: {foreground: '#276E41'}
+
+# Marks family
+- name: Marks family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.marks.tex
+  settings: {foreground: '#ABB954'}
+
+# Math family
+- name: Math family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.math.tex
+  settings: {foreground: '#965A9C'}
+
+# Page family
+- name: Page family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.page.tex
+  settings: {foreground: '#BE6856'}
+
+# Paragraph family
+- name: Paragraph family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.paragraph.tex
+  settings: {foreground: '#B57ABC'}
+
+# Penalties family
+- name: Penalties family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.penalties.tex
+  settings: {foreground: '#974635'}
+
+# Registers family
+- name: Registers family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.registers.tex
+  settings: {foreground: '#D9E784'}
+
+# Tables family
+- name: Tables family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.tables.tex
+  settings: {foreground: '#FFB5A5'}
+
+##
+# General control sequences
+##
+
+# Control sequences like: \CC@command@command
+- name: Control sequences like \CC@command@command
+  scope: support.function.general.at.tex
+  settings: {foreground: '#BE8656'}
+
+# Control sequences like: \command
+- name: Control sequences like \command
+  scope: support.function.general.lower.tex
+  settings: {foreground: '#F00'}
+
+# Control sequences like: \CommandCommand
+- name: Control sequences like \CommandCommand
+  scope: support.function.general.upperlower.tex
+  settings: {foreground: '#0F0'}
 
 - scope: markup.raw.verbatim.latex
   settings: {foreground: '#ccc', background: '#444'}
-
 
 - scope: content.macrocode.dtx
   settings: {background: '#000000'}
