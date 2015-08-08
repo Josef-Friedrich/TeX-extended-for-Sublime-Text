@@ -391,6 +391,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Common settings(TeX Primitive Control Sequences)</string>
+			<key>scope</key>
+			<string>support.function.primitive</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Box family (TeX Primitive Control Sequences)</string>
 			<key>scope</key>
 			<string>support.function.primitive.box.tex</string>
@@ -596,6 +607,17 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FFB5A5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Formats for all general control sequences</string>
+			<key>scope</key>
+			<string>support.function.general</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 		<dict>

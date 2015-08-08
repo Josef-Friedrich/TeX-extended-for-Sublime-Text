@@ -97,10 +97,18 @@ settings:
 - scope: support.function.general.tex
   settings: {foreground: '#d07dff'}
 
+########################################################################
+# TeX
+########################################################################
+
 ##
 # TeX Primitive Control Sequences
 # http://www.tug.org/utilities/plain/cseq.html
 ##
+
+- name: Common settings(TeX Primitive Control Sequences)
+  scope: support.function.primitive
+  settings: {fontStyle: italic}
 
 # Box family
 - name: Box family (TeX Primitive Control Sequences)
@@ -201,6 +209,10 @@ settings:
 # General control sequences
 ##
 
+- name: Formats for all general control sequences
+  scope: support.function.general
+  settings: {fontStyle: bold}
+
 # Control sequences like: \CC@command@command
 - name: Control sequences like \CC@command@command
   scope: support.function.general.at.tex
@@ -216,8 +228,16 @@ settings:
   scope: support.function.general.upperlower.tex
   settings: {foreground: '#0F0'}
 
+########################################################################
+# LaTeX
+########################################################################
+
 - scope: markup.raw.verbatim.latex
   settings: {foreground: '#ccc', background: '#444'}
+
+########################################################################
+# dtx
+########################################################################
 
 - scope: content.macrocode.dtx
   settings: {background: '#000000'}
