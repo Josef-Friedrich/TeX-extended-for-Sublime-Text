@@ -30,7 +30,9 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/color_schemes.html
 
-# Monokai Colors
+# Monokai Colors 
+
+http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme
 
 * Red: F92672
 * Green: A6E22E
@@ -43,13 +45,19 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 * Dark Grey: 49483E
 * Cyan: 272822
 
-## Sublime Monokai Theme:
+## Additional colors in the Sublime Text Monokai Theme:
 
 * White: F8F8F2
 * Light Grey: CFCFC2
 * Dark Grey: F8F8F2A5
 * Dark Grey: 3E3D32
 * Orange:  9D550FB0
+
+## Additional colors in the Sublime Text Monokai extended Theme:
+
+https://raw.githubusercontent.com/jonschlinkert/sublime-monokai-extended/master/Monokai%20Extended.tmTheme
+
+* White: FFFFFF
 
 
 
