@@ -40,6 +40,7 @@ patterns:
 - comment: this works OK with all kinds of crazy stuff as long as section is one line
   name: meta.function.section.latex
   contentName: entity.name.section.latex
+  begin: (?x)((\\)(?:(?:sub){0,2}section|(?:sub)?paragraph|chapter|part|addpart|addchap|addsec|minisec)(?:\*)?)(?:(\[)([^\[]*?)(\]))??(\{)
   beginCaptures:
     '1': {name: support.function.section.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -52,6 +53,7 @@ patterns:
     '0': {name: punctuation.definition.arguments.end.latex}
   patterns:
   - include: $self
+
 - name: meta.function.embedded.java.latex
   contentName: source.java.embedded
   begin: (?:\s*)((\\)begin)(\{)(lstlisting)(\})(?:(\[).*(\]))?(\s*%\s*(?i:Java)\n?)
@@ -67,6 +69,7 @@ patterns:
     '8': {name: comment.line.percentage.latex}
   patterns:
   - include: source.java
+
 - comment: Put the lstlisting match before the more general environment listing. Someday
     it would be nice to make this rule general enough to figure out which language
     is inside the lstlisting environment rather than my own personal use for python.
@@ -86,6 +89,7 @@ patterns:
     '8': {name: comment.line.percentage.latex}
   patterns:
   - include: source.python
+
 - comment: Put the lstlisting match before the more general environment listing. Someday
     it would be nice to make this rule general enough to figure out which language
     is inside the lstlisting environment rather than my own personal use for python.
@@ -103,6 +107,7 @@ patterns:
     '6': {name: punctuation.definition.arguments.optional.begin.latex}
     '7': {name: punctuation.definition.arguments.optional.end.latex}
     '8': {name: comment.line.percentage.latex}
+
 - name: meta.function.verbatim.latex
   contentName: markup.raw.verbatim.latex
   begin: (?:\s*)((\\)begin)(\{)((?:V|v)erbatim|alltt)(\})
@@ -113,6 +118,7 @@ patterns:
     '3': {name: punctuation.definition.arguments.begin.latex}
     '4': {name: variable.parameter.function.latex}
     '5': {name: punctuation.definition.arguments.end.latex}
+
 - name: meta.function.link.url.latex
   match: (?:\s*)((\\)(?:url|href))(\{)([^}]*)(\})
   captures:
@@ -121,6 +127,7 @@ patterns:
     '3': {name: punctuation.definition.arguments.begin.latex}
     '4': {name: markup.underline.link.latex}
     '5': {name: punctuation.definition.arguments.end.latex}
+
 - comment: These two patterns match the \begin{document} and \end{document} commands,
     so that the environment matching pattern following them will ignore those commands.
   name: meta.function.begin-document.latex
@@ -131,6 +138,7 @@ patterns:
     '3': {name: punctuation.definition.arguments.begin.latex}
     '4': {name: variable.parameter.function.latex}
     '5': {name: punctuation.definition.arguments.end.latex}
+
 - name: meta.function.end-document.latex
   match: (?:\s*)((\\)end)(\{)(document)(\})
   captures:
@@ -139,8 +147,11 @@ patterns:
     '3': {name: punctuation.definition.arguments.begin.latex}
     '4': {name: variable.parameter.function.latex}
     '5': {name: punctuation.definition.arguments.end.latex}
+
 - name: meta.function.environment.math.latex
   contentName: string.other.math.block.environment.latex
+  begin: (?x)(?:\s*)((\\)begin)(\{)((?:align|equation|eqnarray|multline|aligned|alignat|split|gather|gathered)(?:\*)?)(\})(\s*\n)?
+  end: (?x)(?:\s*)((\\)end)(\{)(\4)(\})(?:\s*\n)?
   captures:
     '1': {name: support.function.be.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -149,8 +160,11 @@ patterns:
     '5': {name: punctuation.definition.arguments.end.latex}
   patterns:
   - include: $base
+
 - name: meta.function.environment.tabular.latex
   contentName: meta.data.environment.tabular.latex
+  begin: (?x)(?:\s*)((\\)begin)(\{)(array|tabular[xy*]?)(\})(\s*\n)?
+  end: (?x)(?:\s*)((\\)end)(\{)(\4)(\})(?:\s*\n)?
   captures:
     '1': {name: support.function.be.latex}
     '2': {name: punctuation.definition.function.latex}
@@ -173,6 +187,7 @@ patterns:
       - include: $base
     - include: $base
   - include: $base
+
 - name: meta.function.environment.list.latex
   begin: (?:\s*)((\\)begin)(\{)(itemize|enumerate|description|list)(\})
   end: ((\\)end)(\{)(\4)(\})(?:\s*\n)?
@@ -184,6 +199,7 @@ patterns:
     '5': {name: punctuation.definition.arguments.latex}
   patterns:
   - include: $base
+
 - name: meta.function.environment.general.latex
   begin: (?:\s*)((\\)begin)(\{)(\w+[*]?)(\})
   end: ((\\)end)(\{)(\4)(\})(?:\s*\n)?
@@ -195,10 +211,12 @@ patterns:
     '5': {name: punctuation.definition.arguments.latex}
   patterns:
   - include: $base
+
 - name: storage.type.function.latex
   match: (\\)(newcommand|renewcommand)\b
   captures:
     '1': {name: punctuation.definition.function.latex}
+
 - contentName: meta.paragraph.margin.latex
   begin: ((\\)marginpar)(\{)
   beginCaptures:
@@ -210,6 +228,7 @@ patterns:
     '0': {name: punctuation.definition.marginpar.end.latex}
   patterns:
   - include: $base
+
 - contentName: meta.footnote.latex
   begin: ((\\)footnote)(\{)
   beginCaptures:
@@ -221,6 +240,7 @@ patterns:
     '0': {name: punctuation.definition.footnote.end.latex}
   patterns:
   - include: $base
+
 - name: meta.function.emph.latex
   contentName: markup.italic.emph.latex
   begin: ((\\)emph)(\{)
@@ -233,6 +253,7 @@ patterns:
     '0': {name: punctuation.definition.emph.end.latex}
   patterns:
   - include: $base
+
 - comment: "We put the keyword in a capture and name this capture, so that disabling\
     \ spell checking for \u201Ckeyword\u201D won't be inherited by the argument to\
     \ \\textit{...}.\n\nPut specific matches for particular LaTeX keyword.functions\
@@ -249,6 +270,7 @@ patterns:
     '3': {name: punctuation.definition.textit.begin.latex}
   patterns:
   - include: $base
+
 - name: meta.function.textbf.latex
   contentName: markup.bold.textbf.latex
   begin: ((\\)textbf)(\{)
@@ -261,6 +283,7 @@ patterns:
     '3': {name: punctuation.definition.textbf.begin.latex}
   patterns:
   - include: $base
+
 - name: meta.function.texttt.latex
   contentName: markup.raw.texttt.latex
   begin: ((\\)texttt)(\{)
@@ -273,12 +296,16 @@ patterns:
     '3': {name: punctuation.definition.texttt.begin.latex}
   patterns:
   - include: $base
+
 - name: meta.scope.item.latex
   match: (\\)item\b
   captures:
     '0': {name: keyword.other.item.latex}
     '1': {name: punctuation.definition.keyword.latex}
+
 - name: meta.citation.latex
+  begin: (?x)((\\)(?:foot)?(?:full)?(?:no)?(?:short)?[cC]ite(?:al)?(?:t|p|author|year(?:par)?|title)?[ANP]*\*?)(?:(\[)[^\]]*(\]))?(?:(\[)[^\]]*(\]))?(\{)
+  end: \}
   endCaptures:
     '0': {name: punctuation.definition.arguments.latex}
   captures:
