@@ -11,18 +11,21 @@
 	<key>patterns</key>
 	<array>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.tex.dtx</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(%).*$\n?</string>
+			<key>begin</key>
+			<string>^%</string>
+			<key>contentName</key>
+			<string>comment.block.content.tex.dtx</string>
+			<key>end</key>
+			<string>$</string>
 			<key>name</key>
-			<string>comment.line.percentage.tex.dtx</string>
+			<string>comment.block.tex.dtx</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#shortVerbatim</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -65,6 +68,34 @@
 			<string>source.etex.elatex</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>shortVerbatim</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.begin.short.verbatim.dtx</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.short.verabtim.dtx</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.end.short.verbatim.dtx</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\|)([^|]*)(\|)</string>
+			<key>name</key>
+			<string>markup.short.verbatim.dtx</string>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.dtx</string>
 	<key>uuid</key>

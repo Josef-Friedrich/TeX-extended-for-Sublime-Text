@@ -7,10 +7,19 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
 
-- name: comment.line.percentage.tex.dtx
-  match: (%).*$\n?
-  captures:
-    '1': {name: punctuation.definition.comment.tex.dtx}
+- name: comment.block.tex.dtx
+  begin: ^%
+  end: $
+  contentName: comment.block.content.tex.dtx
+  patterns:
+    - include: '#shortVerbatim'
+
+# - name: comment.line.percentage.tex.dtx
+#   match: (%).*$\n?
+#   captures:
+#     '1': {name: punctuation.definition.comment.tex.dtx}
+#   patterns:
+
 
 - comment: Lua file
   name: file.lua.dtx
@@ -27,4 +36,14 @@ patterns:
       - name: luacode.dtx
 
 - include: source.etex.elatex
+
+repository:
+  shortVerbatim:
+    name: markup.short.verbatim.dtx
+    match: (\|)([^|]*)(\|)
+    captures:
+      '1': {name: punctuation.definition.begin.short.verbatim.dtx}
+      '2': {name: entity.name.short.verabtim.dtx}
+      '3': {name: punctuation.definition.end.short.verbatim.dtx}
+
 ...

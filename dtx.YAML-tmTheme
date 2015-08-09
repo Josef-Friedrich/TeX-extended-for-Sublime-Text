@@ -2,6 +2,12 @@
 ---
 author: Josef Friedrich
 name: dtx
+
+##
+# Monokai
+##
+
+
 settings:
 - settings: {
     activeGuide: '#9D550FB0',
@@ -284,6 +290,9 @@ settings:
 - scope: markup.raw.verbatim.latex
   settings: {foreground: '#ccc', background: '#444'}
 
+- scope: meta.function.section.latex
+  settings: {background: '#444'}
+
 ########################################################################
 # dtx
 ########################################################################
@@ -296,5 +305,12 @@ settings:
 
 - scope: comment.line.percentage.tex.dtx
   settings: {foreground: '#CFCFC2'}
+
+- scope: comment.block.content.tex.dtx
+  settings: {foreground: '#CFCFC2'}
+
+- scope: markup.short.verbatim.dtx
+  settings: {fontStyle: bold, background: '#000000'}
+
 uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
 ...

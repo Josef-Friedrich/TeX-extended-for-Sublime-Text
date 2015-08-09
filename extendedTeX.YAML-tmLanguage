@@ -116,10 +116,10 @@ patterns:
 - name: comment.line.percentage.directive.texshop.tex
   match: ^%!TEX (\S*) =\s*(.*)\s*$
 
-- name: comment.line.percentage.tex
-  match: (%).*$\n?
-  captures:
-    '1': {name: punctuation.definition.comment.tex}
+# - name: comment.line.percentage.tex
+#   match: (%).*$\n?
+#   captures:
+#     '1': {name: punctuation.definition.comment.tex}
 
 ##
 # LuaTeX

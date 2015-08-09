@@ -666,6 +666,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.function.section.latex</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#444</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>content.macrocode.dtx</string>
 			<key>settings</key>
 			<dict>
@@ -689,6 +698,26 @@
 			<dict>
 				<key>foreground</key>
 				<string>#CFCFC2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>comment.block.content.tex.dtx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CFCFC2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.short.verbatim.dtx</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#000000</string>
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 	</array>
