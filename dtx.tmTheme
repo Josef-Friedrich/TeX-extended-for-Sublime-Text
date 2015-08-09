@@ -628,7 +628,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#BE8656</string>
+				<string>#A6E22E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -639,7 +639,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F00</string>
+				<string>#E6DB74</string>
 			</dict>
 		</dict>
 		<dict>
@@ -650,7 +650,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#0F0</string>
+				<string>#66D9EF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -671,6 +671,24 @@
 			<dict>
 				<key>background</key>
 				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>punctuation.definition.comment.tex.dtx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#49483E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>comment.line.percentage.tex.dtx</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CFCFC2</string>
 			</dict>
 		</dict>
 	</array>

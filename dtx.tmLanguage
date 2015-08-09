@@ -11,6 +11,20 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.tex.dtx</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(%).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.percentage.tex.dtx</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\%&lt;\*lua&gt;</string>
 			<key>comment</key>

@@ -7,6 +7,23 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
 
+- comment: this works OK with all kinds of crazy stuff as long as section is one line
+  name: meta.function.section.latex
+  contentName: entity.name.section.latex
+  begin: (?x)((\\)(?:(?:sub){0,2}section|(?:sub)?paragraph|chapter|part|addpart|addchap|addsec|minisec)(?:\*)?)(?:(\[)([^\[]*?)(\]))??(\{)
+  beginCaptures:
+    '1': {name: support.function.section.latex}
+    '2': {name: punctuation.definition.function.latex}
+    '3': {name: punctuation.definition.arguments.optional.begin.latex}
+    '4': {name: entity.name.section.latex}
+    '5': {name: punctuation.definition.arguments.optional.end.latex}
+    '6': {name: punctuation.definition.arguments.begin.latex}
+  end: \}
+  endCaptures:
+    '0': {name: punctuation.definition.arguments.end.latex}
+  patterns:
+  - include: $self
+
 - include: source.etex
 
 ...

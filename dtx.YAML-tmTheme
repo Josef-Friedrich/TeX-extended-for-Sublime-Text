@@ -265,17 +265,17 @@ settings:
 # Control sequences like: \CC@command@command
 - name: Control sequences like \CC@command@command
   scope: support.function.general.at.tex
-  settings: {foreground: '#BE8656'}
+  settings: {foreground: '#A6E22E'}
 
 # Control sequences like: \command
 - name: Control sequences like \command
   scope: support.function.general.lower.tex
-  settings: {foreground: '#F00'}
+  settings: {foreground: '#E6DB74'}
 
 # Control sequences like: \CommandCommand
 - name: Control sequences like \CommandCommand
   scope: support.function.general.upperlower.tex
-  settings: {foreground: '#0F0'}
+  settings: {foreground: '#66D9EF'}
 
 ########################################################################
 # LaTeX
@@ -290,5 +290,11 @@ settings:
 
 - scope: content.macrocode.dtx
   settings: {background: '#000000'}
+
+- scope: punctuation.definition.comment.tex.dtx
+  settings: {foreground: '#49483E'}
+
+- scope: comment.line.percentage.tex.dtx
+  settings: {foreground: '#CFCFC2'}
 uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
 ...

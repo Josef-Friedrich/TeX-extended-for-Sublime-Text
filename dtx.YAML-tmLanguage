@@ -7,6 +7,11 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
 
+- name: comment.line.percentage.tex.dtx
+  match: (%).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.tex.dtx}
+
 - comment: Lua file
   name: file.lua.dtx
   begin: \%<\*lua>
