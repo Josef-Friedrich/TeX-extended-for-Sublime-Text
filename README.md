@@ -1,4 +1,4 @@
-# Sublime Text support for .dtx (Documented LaTeX)
+# Sublime Text: Extended support for TeX / LaTeX / dtx (Documented LaTeX)
 
 # Installation
 
