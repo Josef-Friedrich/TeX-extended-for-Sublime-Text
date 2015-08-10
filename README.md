@@ -26,6 +26,7 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html
 * http://www.geocities.jp/kosako3/oniguruma/doc/RE.txt
 * http://www.apeth.com/nonblog/stories/textmatebundle.html
+* https://manual.macromates.com/en/language_grammars
 
 ## tmTheme
 
