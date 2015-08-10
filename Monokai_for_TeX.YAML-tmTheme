@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 ---
 author: Josef Friedrich
-name: dtx
+name: Monokai for TeX
 
 ##
 # Monokai

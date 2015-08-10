@@ -4,3 +4,5 @@
 *.sty
 *.dtx
 *.cls
+*.tmTheme
+*.tmLanguage
