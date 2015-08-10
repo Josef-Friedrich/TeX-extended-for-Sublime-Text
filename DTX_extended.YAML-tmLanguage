@@ -7,6 +7,24 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
 
+- comment: Lua file
+  name: file.lua.dtx
+  begin: \%<\*lua>
+  end: \%</lua>
+  patterns:
+  - comment: Macro code
+    name: meta.macrocode.dtx
+    begin: \%    \\begin{macrocode}.*\n$
+    beginCaptures:
+      '0': {name: comment.line.macrocode.begin.dtx}
+    end: \%    \\end{macrocode}.*\n$
+    endCaptures:
+      '0': {name: comment.line.macrocode.end.dtx}
+    contentName: meta.embedded.block.content.macrocode.dtx
+    patterns:
+      - include: source.lua
+      - name: luacode.dtx
+
 - name: comment.block.tex.dtx
   begin: ^%
   end: $
@@ -21,19 +39,7 @@ patterns:
 #   patterns:
 
 
-- comment: Lua file
-  name: file.lua.dtx
-  begin: \%<\*lua>
-  end: \%</lua>
-  patterns:
-  - comment: Macro code
-    name: macrocode.dtx
-    begin: \%    \\begin{macrocode}.*$
-    end: \%    \\end{macrocode}
-    contentName: content.macrocode.dtx
-    patterns:
-      - include: source.lua
-      - name: luacode.dtx
+
 
 - include: source.etex.elatex
 

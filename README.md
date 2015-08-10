@@ -25,6 +25,7 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html
 * http://www.geocities.jp/kosako3/oniguruma/doc/RE.txt
+* http://www.apeth.com/nonblog/stories/textmatebundle.html
 
 ## tmTheme
 
@@ -58,6 +59,11 @@ http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme
 https://raw.githubusercontent.com/jonschlinkert/sublime-monokai-extended/master/Monokai%20Extended.tmTheme
 
 * White: FFFFFF
+
+# Own additional colors
+
+* Cyan dark 20211c
+* Cyan darker: 131411
 
 
 

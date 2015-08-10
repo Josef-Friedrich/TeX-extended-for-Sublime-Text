@@ -112,7 +112,7 @@ patterns:
 
 - name: meta.function.verbatim.latex
   contentName: markup.raw.verbatim.latex
-  begin: (?:\s*)((\\)begin)(\{)((?:V|v)erbatim|alltt)(\})
+  begin: (?:\s*)((\\)begin)(\{)((?:V|v)erbatim|alltt)(\}).*\n$
   end: ((\\)end)(\{)(\4)(\})
   captures:
     '1': {name: support.function.be.latex}

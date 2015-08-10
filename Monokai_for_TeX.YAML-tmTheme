@@ -168,97 +168,97 @@ settings:
 # Box family
 - name: Box family (TeX Primitive Control Sequences)
   scope: support.function.primitive.box.tex
-  settings: {foreground: '#626D1D'}
+  settings: {foreground: '#F9267266'}
 
 # Character family
 - name: Character family (TeX Primitive Control Sequences)
   scope: support.function.primitive.character.tex
-  settings: {foreground: '#16522C'}
+  settings: {foreground: '#A6E22E66'}
 
 # Debugging family
 - name: Debugging family (TeX Primitive Control Sequences)
   scope: support.function.primitive.debugging.tex
-  settings: {foreground: '#EE9987'}
+  settings: {foreground: '#E6DB7466'}
 
 # File I/0 family
 - name: File I/0 family (TeX Primitive Control Sequences)
   scope: support.function.primitive.fileio.tex
-  settings: {foreground: '#763A7D'}
+  settings: {foreground: '#FD971F66'}
 
 # Fonts family
 - name: Fonts family (TeX Primitive Control Sequences)
   scope: support.function.primitive.fonts.tex
-  settings: {foreground: '#712C1E'}
+  settings: {foreground: '#66D9EF66'}
 
 # Glue family
 - name: Glue family (TeX Primitive Control Sequences)
   scope: support.function.primitive.glue.tex
-  settings: {foreground: '#5D2463'}
+  settings: {foreground: '#AE81FF66'}
 
 # Hyphenation family
 - name: Hyphenation family (TeX Primitive Control Sequences)
   scope: support.function.primitive.hyphenation.tex
-  settings: {foreground: '#869334'}
+  settings: {foreground: '#F9267299'}
 
 # Inserts family
 - name: Inserts family (TeX Primitive Control Sequences)
   scope: support.function.primitive.inserts.tex
-  settings: {foreground: '#82C99D'}
+  settings: {foreground: '#A6E22E99'}
 
 # Job family
 - name: Job family (TeX Primitive Control Sequences)
   scope: support.function.primitive.job.tex
-  settings: {foreground: '#3F8A5B'}
+  settings: {foreground: '#FD971F99'}
 
 # Kern family
 - name: Kern family (TeX Primitive Control Sequences)
   scope: support.function.primitive.kern.tex
-  settings: {foreground: '#EDFAA2'}
+  settings: {foreground: '#66D9EF99'}
 
 # Logic family
 - name: Logic family (TeX Primitive Control Sequences)
   scope: support.function.primitive.logic.tex
-  settings: {foreground: '#62AD7E'}
+  settings: {foreground: '#F9267299'}
 
 # Macro family
 - name: Macro family (TeX Primitive Control Sequences)
   scope: support.function.primitive.macro.tex
-  settings: {foreground: '#276E41'}
+  settings: {foreground: '#A6E22E99'}
 
 # Marks family
 - name: Marks family (TeX Primitive Control Sequences)
   scope: support.function.primitive.marks.tex
-  settings: {foreground: '#ABB954'}
+  settings: {foreground: '#FD971F44'}
 
 # Math family
 - name: Math family (TeX Primitive Control Sequences)
   scope: support.function.primitive.math.tex
-  settings: {foreground: '#965A9C'}
+  settings: {foreground: '#F9267244'}
 
 # Page family
 - name: Page family (TeX Primitive Control Sequences)
   scope: support.function.primitive.page.tex
-  settings: {foreground: '#BE6856'}
+  settings: {foreground: '#E6DB7444'}
 
 # Paragraph family
 - name: Paragraph family (TeX Primitive Control Sequences)
   scope: support.function.primitive.paragraph.tex
-  settings: {foreground: '#B57ABC'}
+  settings: {foreground: '#66D9EF44'}
 
 # Penalties family
 - name: Penalties family (TeX Primitive Control Sequences)
   scope: support.function.primitive.penalties.tex
-  settings: {foreground: '#974635'}
+  settings: {foreground: '#AE81FF44'}
 
 # Registers family
 - name: Registers family (TeX Primitive Control Sequences)
   scope: support.function.primitive.registers.tex
-  settings: {foreground: '#D9E784'}
+  settings: {foreground: '#F9267244'}
 
 # Tables family
 - name: Tables family (TeX Primitive Control Sequences)
   scope: support.function.primitive.tables.tex
-  settings: {foreground: '#FFB5A5'}
+  settings: {foreground: '#E6DB7444'}
 
 ##
 # General control sequences
@@ -297,8 +297,11 @@ settings:
 # dtx
 ########################################################################
 
-- scope: content.macrocode.dtx
-  settings: {background: '#000000'}
+# - scope: comment.block.macrocode.dtx
+#   settings: {background: '#131411'}
+
+- scope: meta.embedded.block.content.macrocode.dtx
+  settings: {background: '#131411'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#49483E'}
