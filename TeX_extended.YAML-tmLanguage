@@ -121,8 +121,9 @@ patterns:
 #   captures:
 #     '1': {name: punctuation.definition.comment.tex}
 
-##
-# LuaTeX
+- name: constant.numeric.dimension.tex
+  match: -?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)
+
 ##
 
 - comment: \directlua

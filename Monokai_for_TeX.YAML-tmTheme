@@ -321,6 +321,9 @@ settings:
 - scope: comment.block.content.tex.dtx
   settings: {foreground: '#CFCFC2'}
 
+- scope: comment.line.a.dtx
+  settings: {foreground: '#49483E'}
+
 - scope: markup.short.verbatim.dtx
   settings: {fontStyle: bold, background: '#000000'}
 
