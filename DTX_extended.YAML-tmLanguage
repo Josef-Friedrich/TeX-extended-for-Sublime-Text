@@ -20,18 +20,20 @@ patterns:
   begin: \%<\*lua>
   end: \%</lua>
   patterns:
-  - comment: Macro code
-    name: meta.macrocode.dtx
-    begin: \%    \\begin{macrocode}.*\n$
-    beginCaptures:
-      '0': {name: comment.line.macrocode.begin.dtx}
-    end: \%    \\end{macrocode}.*\n$
-    endCaptures:
-      '0': {name: comment.line.macrocode.end.dtx}
-    contentName: meta.embedded.block.content.macrocode.dtx
-    patterns:
-      - include: source.lua
-      - name: luacode.dtx
+    - comment: Macro code
+      name: meta.macrocode.dtx
+      begin: \%    \\begin{macrocode}.*\n$
+      beginCaptures:
+        '0': {name: comment.line.macrocode.begin.dtx}
+      end: \%    \\end{macrocode}.*\n$
+      endCaptures:
+        '0': {name: comment.line.macrocode.end.dtx}
+      contentName: meta.embedded.block.content.macrocode.dtx
+      patterns:
+        - include: source.lua
+        - name: luacode.dtx
+
+    - include: '#commentBlockDtx'
 
 - name: comment.block.tex.dtx
   begin: ^%
@@ -39,7 +41,7 @@ patterns:
   contentName: comment.block.content.tex.dtx
   patterns:
     - include: '#shortVerbatim'
-      include: '#commentACaret'
+    - include: '#commentACaret'
 
 # - name: comment.line.percentage.tex.dtx
 #   match: (%).*$\n?
@@ -61,7 +63,16 @@ repository:
       '3': {name: punctuation.definition.end.short.verbatim.dtx}
 
   commentACaret:
-    name: comment.line.a.dtx
+    name: comment.line.a.caret.dtx
     match: \^\^A.*
+
+  commentBlockDtx:
+    name: comment.block.tex.dtx
+    begin: ^%
+    end: $
+    contentName: comment.block.content.tex.dtx
+    patterns:
+      - include: '#shortVerbatim'
+      - include: '#commentACaret'
 
 ...

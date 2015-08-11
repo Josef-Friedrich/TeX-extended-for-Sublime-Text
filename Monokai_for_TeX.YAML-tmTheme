@@ -321,11 +321,11 @@ settings:
 - scope: comment.block.content.tex.dtx
   settings: {foreground: '#CFCFC2'}
 
-- scope: comment.line.a.dtx
+- scope: comment.line.a.caret.dtx
   settings: {foreground: '#49483E'}
 
 - scope: markup.short.verbatim.dtx
-  settings: {fontStyle: bold, background: '#000000'}
+  settings: {fontStyle: bold, foreground: '#FD971F99'}
 
 uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
 ...

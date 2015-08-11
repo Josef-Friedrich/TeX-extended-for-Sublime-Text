@@ -1,0 +1,12 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: cls (LaTeX)
+scopeName: text.tex.latex.cls
+fileTypes: [cls]
+uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
+
+patterns:
+
+  - include: text.tex.latex
+
+...
