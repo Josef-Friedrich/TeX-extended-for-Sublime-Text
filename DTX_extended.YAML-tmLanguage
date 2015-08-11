@@ -8,6 +8,14 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 patterns:
 
 - comment: Lua file
+  name: file.readme.dtx
+  begin: \%<\*readme>.*\n$
+  end: \%</readme>
+  contentName: meta.embedded.block.content.macrocode.dtx
+  patterns:
+    - include: text.html.markdown
+
+- comment: Lua file
   name: file.lua.dtx
   begin: \%<\*lua>
   end: \%</lua>

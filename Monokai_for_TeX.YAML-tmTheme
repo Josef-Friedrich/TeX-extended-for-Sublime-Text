@@ -4,7 +4,7 @@ author: Josef Friedrich
 name: Monokai for TeX
 
 ##
-# Monokai
+# Monokai with some additions
 ##
 
 
@@ -50,6 +50,9 @@ settings:
   scope: constant.character, constant.other
   settings: {foreground: '#AE81FF'}
 
+- scope: constant.numeric.line-number.find-in-files - match
+  settings: {foreground: '#AE81FFA0'}
+
 # variable
 - name: Variable
   scope: variable
@@ -75,7 +78,8 @@ settings:
 
 # entity
 - name: Class name
-  scope: entity.name.class
+  scope: entity.name.class,
+    entity.name.section
   settings: {fontStyle: underline, foreground: '#A6E22E'}
 
 - name: Inherited class
@@ -94,6 +98,9 @@ settings:
   scope: entity.other.attribute-name
   settings: {fontStyle: '', foreground: '#A6E22E'}
 
+- scope: entity.name.filename.find-in-files
+  settings: {foreground: '#E6DB74'}
+
 # support
 - name: Library function
   scope: support.function
@@ -104,7 +111,8 @@ settings:
   settings: {fontStyle: '', foreground: '#66D9EF'}
 
 - name: Library class/type
-  scope: support.type, support.class
+  scope: support.type,
+    support.class
   settings: {fontStyle: italic, foreground: '#66D9EF'}
 
 - name: Library variable
@@ -127,7 +135,9 @@ settings:
   scope: meta.structure.dictionary.json string.quoted.double.json
   settings: {foreground: '#CFCFC2'}
 - name: diff.header
-  scope: meta.diff, meta.diff.header
+  scope: meta.diff,
+    meta.diff.header,
+    meta.paragraph.list
   settings: {foreground: '#75715E'}
 
 # markup
@@ -140,16 +150,15 @@ settings:
 - name: diff.changed
   scope: markup.changed
   settings: {foreground: '#E6DB74'}
+- scope: markup.raw.block
+  settings: {background: '#000'}
 
-- scope: constant.numeric.line-number.find-in-files - match
-  settings: {foreground: '#AE81FFA0'}
-
-- scope: entity.name.filename.find-in-files
-  settings: {foreground: '#E6DB74'}
-
+# punctuation
 - scope: punctuation.definition.keyword.tex
   settings: {foreground: '#a9ffa7'}
 
+- scope: punctuation.definition.heading
+  settings: {foreground: '#3E3D32'}
 
 
 ########################################################################
