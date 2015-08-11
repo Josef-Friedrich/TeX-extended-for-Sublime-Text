@@ -41,7 +41,7 @@ patterns:
 
 
 
-- include: source.etex.elatex
+- include: text.tex.latex
 
 repository:
   shortVerbatim:
