@@ -124,15 +124,4 @@ patterns:
 - name: constant.numeric.dimension.tex
   match: -?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)
 
-##
-
-- comment: \directlua
-  name: support.function.lua.luatex
-  begin: \\directlua\{
-  end: \}
-  contentName: support.function.lua.content.luatex
-  patterns:
-    - include: source.lua
-    - name: support.function.lua.embedded.luatex
-
 ...

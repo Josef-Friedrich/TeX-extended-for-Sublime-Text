@@ -1,0 +1,26 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: LuaTeX
+scopeName: text.tex.luatex
+fileTypes: [tex]
+uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
+firstLineMatch: ^%\!TEX program = (luatex|lualatex)
+
+patterns:
+
+- comment: \directlua
+  name: support.function.lua.luatex
+  begin: ((\\)directlua|latelua)(\{)
+  beginCaptures:
+    '1': {name: support.function.directlua.luatex}
+    '2': {name: punctuation.definition.function.luatex}
+    '3': {name: punctuation.definition.directlua.begin.luatex}
+  end: \}
+  endCaptures:
+    '0': {name: punctuation.definition.directlua.end.latex}
+  contentName: support.function.lua.content.luatex
+  patterns:
+    - include: source.lua
+    - name: support.function.lua.embedded.luatex
+
+...
