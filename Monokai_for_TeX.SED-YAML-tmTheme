@@ -1,0 +1,331 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+---
+author: Josef Friedrich
+name: Monokai for TeX
+
+##
+# Monokai with some additions
+##
+
+
+settings:
+- settings: {
+    activeGuide: '#$SUB_ORANGEB0',
+    background: '#$CYAN',
+    bracketContentsForeground: '#$SUB_WHITEA5',
+    bracketContentsOptions: underline,
+    bracketsForeground: '#$SUB_WHITEA5',
+    bracketsOptions: underline,
+    caret: '#$WHITE',
+    findHighlight: '#FFE792',
+    findHighlightForeground: '#000000',
+    foreground: '#$SUB_WHITE',
+    invisibles: '#3B3A32',
+    lineHighlight: '#$SUB_DARK_GREY',
+    selection: '#$DARK_GREY',
+    selectionBorder: '#222218',
+    tagsOptions: stippled_underline
+  }
+
+# comment
+- name: Comment
+  scope: comment
+  settings: {foreground: '#$LIGHT_GREY'}
+
+# string
+- name: String
+  scope: string
+  settings: {foreground: '#$YELLOW'}
+
+# constant
+- name: Number
+  scope: constant.numeric
+  settings: {foreground: '#$MAGENTA'}
+
+- name: Built-in constant
+  scope: constant.language
+  settings: {foreground: '#$MAGENTA'}
+
+- name: User-defined constant
+  scope: constant.character, constant.other
+  settings: {foreground: '#$MAGENTA'}
+
+- scope: constant.numeric.line-number.find-in-files - match
+  settings: {foreground: '#$MAGENTAA0'}
+
+# variable
+- name: Variable
+  scope: variable
+  settings: {fontStyle: underline}
+
+- name: Function argument
+  scope: variable.parameter
+  settings: {fontStyle: italic, foreground: '#$ORANGE'}
+
+# keyword
+- name: Keyword
+  scope: keyword
+  settings: {foreground: '#$RED'}
+
+# storage
+- name: Storage
+  scope: storage
+  settings: {foreground: '#$RED'}
+
+- name: Storage type
+  scope: storage.type
+  settings: {fontStyle: italic, foreground: '#$BLUE'}
+
+# entity
+- name: Class name
+  scope: entity.name.class,
+    entity.name.section
+  settings: {fontStyle: underline, foreground: '#$GREEN'}
+
+- name: Inherited class
+  scope: entity.other.inherited-class
+  settings: {fontStyle: italic underline, foreground: '#$GREEN'}
+
+- name: Function name
+  scope: entity.name.function
+  settings: {fontStyle: '', foreground: '#$GREEN'}
+
+- name: Tag name
+  scope: entity.name.tag
+  settings: {fontStyle: '', foreground: '#$RED'}
+
+- name: Tag attribute
+  scope: entity.other.attribute-name
+  settings: {fontStyle: '', foreground: '#$GREEN'}
+
+- scope: entity.name.filename.find-in-files
+  settings: {foreground: '#$YELLOW'}
+
+# support
+- name: Library function
+  scope: support.function
+  settings: {foreground: '#$BLUE'}
+
+- name: Library constant
+  scope: support.constant
+  settings: {fontStyle: '', foreground: '#$BLUE'}
+
+- name: Library class/type
+  scope: support.type,
+    support.class
+  settings: {fontStyle: italic, foreground: '#$BLUE'}
+
+- name: Library variable
+  scope: support.other.variable
+  settings: {fontStyle: ''}
+
+- scope: support.function.general.tex
+  settings: {foreground: '#d07dff'}
+
+# invalid
+- name: Invalid
+  scope: invalid
+  settings: {background: '#$RED', fontStyle: '', foreground: '#$WHITE'}
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings: {background: '#$MAGENTA', foreground: '#$WHITE'}
+
+# meta
+- name: JSON String
+  scope: meta.structure.dictionary.json string.quoted.double.json
+  settings: {foreground: '#$SUB_LIGHT_GREY'}
+- name: diff.header
+  scope: meta.diff,
+    meta.diff.header,
+    meta.paragraph.list
+  settings: {foreground: '#$LIGHT_GREY'}
+
+# markup
+- name: diff.deleted
+  scope: markup.deleted
+  settings: {foreground: '#$RED'}
+- name: diff.inserted
+  scope: markup.inserted
+  settings: {foreground: '#$GREEN'}
+- name: diff.changed
+  scope: markup.changed
+  settings: {foreground: '#$YELLOW'}
+- scope: markup.raw.block
+  settings: {background: '#000'}
+
+# punctuation
+- scope: punctuation.definition.keyword.tex
+  settings: {foreground: '#a9ffa7'}
+
+- scope: punctuation.definition.heading
+  settings: {foreground: '#$SUB_DARK_GREY'}
+
+
+########################################################################
+# TeX
+########################################################################
+
+##
+# TeX Primitive Control Sequences
+# http://www.tug.org/utilities/plain/cseq.html
+##
+
+- name: Common settings(TeX Primitive Control Sequences)
+  scope: support.function.primitive
+  settings: {fontStyle: italic}
+
+# Box family
+- name: Box family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.box.tex
+  settings: {foreground: '#$RED66'}
+
+# Character family
+- name: Character family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.character.tex
+  settings: {foreground: '#$GREEN66'}
+
+# Debugging family
+- name: Debugging family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.debugging.tex
+  settings: {foreground: '#$YELLOW66'}
+
+# File I/0 family
+- name: File I/0 family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.fileio.tex
+  settings: {foreground: '#$ORANGE66'}
+
+# Fonts family
+- name: Fonts family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.fonts.tex
+  settings: {foreground: '#$BLUE66'}
+
+# Glue family
+- name: Glue family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.glue.tex
+  settings: {foreground: '#$MAGENTA66'}
+
+# Hyphenation family
+- name: Hyphenation family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.hyphenation.tex
+  settings: {foreground: '#$RED99'}
+
+# Inserts family
+- name: Inserts family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.inserts.tex
+  settings: {foreground: '#$GREEN99'}
+
+# Job family
+- name: Job family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.job.tex
+  settings: {foreground: '#$ORANGE99'}
+
+# Kern family
+- name: Kern family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.kern.tex
+  settings: {foreground: '#$BLUE99'}
+
+# Logic family
+- name: Logic family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.logic.tex
+  settings: {foreground: '#$RED99'}
+
+# Macro family
+- name: Macro family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.macro.tex
+  settings: {foreground: '#$GREEN99'}
+
+# Marks family
+- name: Marks family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.marks.tex
+  settings: {foreground: '#$ORANGE44'}
+
+# Math family
+- name: Math family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.math.tex
+  settings: {foreground: '#$RED44'}
+
+# Page family
+- name: Page family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.page.tex
+  settings: {foreground: '#$YELLOW44'}
+
+# Paragraph family
+- name: Paragraph family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.paragraph.tex
+  settings: {foreground: '#$BLUE44'}
+
+# Penalties family
+- name: Penalties family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.penalties.tex
+  settings: {foreground: '#$MAGENTA44'}
+
+# Registers family
+- name: Registers family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.registers.tex
+  settings: {foreground: '#$RED44'}
+
+# Tables family
+- name: Tables family (TeX Primitive Control Sequences)
+  scope: support.function.primitive.tables.tex
+  settings: {foreground: '#$YELLOW44'}
+
+##
+# General control sequences
+##
+
+- name: Formats for all general control sequences
+  scope: support.function.general
+  settings: {fontStyle: bold}
+
+# Control sequences like: \CC@command@command
+- name: Control sequences like \CC@command@command
+  scope: support.function.general.at.tex
+  settings: {foreground: '#$GREEN'}
+
+# Control sequences like: \command
+- name: Control sequences like \command
+  scope: support.function.general.lower.tex
+  settings: {foreground: '#$YELLOW'}
+
+# Control sequences like: \CommandCommand
+- name: Control sequences like \CommandCommand
+  scope: support.function.general.upperlower.tex
+  settings: {foreground: '#$BLUE'}
+
+########################################################################
+# LaTeX
+########################################################################
+
+- scope: markup.raw.verbatim.latex
+  settings: {foreground: '#ccc', background: '#444'}
+
+- scope: meta.function.section.latex
+  settings: {background: '#444'}
+
+########################################################################
+# dtx
+########################################################################
+
+# - scope: comment.block.macrocode.dtx
+#   settings: {background: '#131411'}
+
+- scope: meta.embedded.block.content.macrocode.dtx
+  settings: {background: '#131411'}
+
+- scope: punctuation.definition.comment.tex.dtx
+  settings: {foreground: '#$DARK_GREY'}
+
+- scope: comment.line.percentage.tex.dtx
+  settings: {foreground: '#$SUB_LIGHT_GREY'}
+
+- scope: comment.block.content.tex.dtx
+  settings: {foreground: '#$SUB_LIGHT_GREY'}
+
+- scope: comment.line.a.caret.dtx
+  settings: {foreground: '#$DARK_GREY'}
+
+- scope: markup.short.verbatim.dtx
+  settings: {fontStyle: bold, foreground: '#$ORANGE99'}
+
+uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
+...
