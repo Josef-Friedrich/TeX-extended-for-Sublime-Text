@@ -1,3 +1,3 @@
-#! /usr/bin/sed -i
-s/foo/bar/g
-s/baz/zab/g
+#! /bin/sh
+
+./sed.sh Monokai_for_TeX.SED-YAML-tmTheme > Monokai_for_TeX.YAML-tmTheme

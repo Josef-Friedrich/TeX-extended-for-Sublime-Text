@@ -17,13 +17,13 @@ settings:
     bracketsForeground: '#F8F8F2A5',
     bracketsOptions: underline,
     caret: '#F8F8F0',
-    findHighlight: '#FFE792',
+    findHighlight: '#FD971F',
     findHighlightForeground: '#000000',
     foreground: '#F8F8F2',
-    invisibles: '#3B3A32',
+    invisibles: '#3E3D32',
     lineHighlight: '#3E3D32',
     selection: '#49483E',
-    selectionBorder: '#222218',
+    selectionBorder: '#3E3D32',
     tagsOptions: stippled_underline
   }
 
@@ -51,7 +51,7 @@ settings:
   settings: {foreground: '#AE81FF'}
 
 - scope: constant.numeric.line-number.find-in-files - match
-  settings: {foreground: '#AE81FFA0'}
+  settings: {foreground: '#AE81FFA5'}
 
 # variable
 - name: Variable
@@ -120,7 +120,7 @@ settings:
   settings: {fontStyle: ''}
 
 - scope: support.function.general.tex
-  settings: {foreground: '#d07dff'}
+  settings: {foreground: '#AE81FF'}
 
 # invalid
 - name: Invalid
@@ -151,11 +151,11 @@ settings:
   scope: markup.changed
   settings: {foreground: '#E6DB74'}
 - scope: markup.raw.block
-  settings: {background: '#000'}
+  settings: {background: '#49483E'}
 
 # punctuation
 - scope: punctuation.definition.keyword.tex
-  settings: {foreground: '#a9ffa7'}
+  settings: {foreground: '#A6E22E'}
 
 - scope: punctuation.definition.heading
   settings: {foreground: '#3E3D32'}
@@ -297,20 +297,17 @@ settings:
 ########################################################################
 
 - scope: markup.raw.verbatim.latex
-  settings: {foreground: '#ccc', background: '#444'}
+  settings: {foreground: '#75715E', background: '#49483E'}
 
 - scope: meta.function.section.latex
-  settings: {background: '#444'}
+  settings: {background: '#49483E'}
 
 ########################################################################
 # dtx
 ########################################################################
 
-# - scope: comment.block.macrocode.dtx
-#   settings: {background: '#131411'}
-
 - scope: meta.embedded.block.content.macrocode.dtx
-  settings: {background: '#131411'}
+  settings: {background: '#27282244'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#49483E'}

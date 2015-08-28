@@ -10,20 +10,20 @@ name: Monokai for TeX
 
 settings:
 - settings: {
-    activeGuide: '#$SUB_ORANGEB0',
+    activeGuide: '#$SUB_ORANGE$A_LIGHTER',
     background: '#$CYAN',
-    bracketContentsForeground: '#$SUB_WHITEA5',
+    bracketContentsForeground: '#$SUB_WHITE$A_LIGHT',
     bracketContentsOptions: underline,
-    bracketsForeground: '#$SUB_WHITEA5',
+    bracketsForeground: '#$SUB_WHITE$A_LIGHT',
     bracketsOptions: underline,
     caret: '#$WHITE',
-    findHighlight: '#FFE792',
-    findHighlightForeground: '#000000',
+    findHighlight: '#$ORANGE',
+    findHighlightForeground: '#$SUB_BLACK',
     foreground: '#$SUB_WHITE',
-    invisibles: '#3B3A32',
+    invisibles: '#$SUB_DARK_GREY',
     lineHighlight: '#$SUB_DARK_GREY',
     selection: '#$DARK_GREY',
-    selectionBorder: '#222218',
+    selectionBorder: '#$SUB_DARK_GREY',
     tagsOptions: stippled_underline
   }
 
@@ -51,7 +51,7 @@ settings:
   settings: {foreground: '#$MAGENTA'}
 
 - scope: constant.numeric.line-number.find-in-files - match
-  settings: {foreground: '#$MAGENTAA0'}
+  settings: {foreground: '#$MAGENTA$A_LIGHT'}
 
 # variable
 - name: Variable
@@ -120,7 +120,7 @@ settings:
   settings: {fontStyle: ''}
 
 - scope: support.function.general.tex
-  settings: {foreground: '#d07dff'}
+  settings: {foreground: '#$MAGENTA'}
 
 # invalid
 - name: Invalid
@@ -151,11 +151,11 @@ settings:
   scope: markup.changed
   settings: {foreground: '#$YELLOW'}
 - scope: markup.raw.block
-  settings: {background: '#000'}
+  settings: {background: '#$DARK_GREY'}
 
 # punctuation
 - scope: punctuation.definition.keyword.tex
-  settings: {foreground: '#a9ffa7'}
+  settings: {foreground: '#$GREEN'}
 
 - scope: punctuation.definition.heading
   settings: {foreground: '#$SUB_DARK_GREY'}
@@ -177,97 +177,97 @@ settings:
 # Box family
 - name: Box family (TeX Primitive Control Sequences)
   scope: support.function.primitive.box.tex
-  settings: {foreground: '#$RED66'}
+  settings: {foreground: '#$RED$A_DARK'}
 
 # Character family
 - name: Character family (TeX Primitive Control Sequences)
   scope: support.function.primitive.character.tex
-  settings: {foreground: '#$GREEN66'}
+  settings: {foreground: '#$GREEN$A_DARK'}
 
 # Debugging family
 - name: Debugging family (TeX Primitive Control Sequences)
   scope: support.function.primitive.debugging.tex
-  settings: {foreground: '#$YELLOW66'}
+  settings: {foreground: '#$YELLOW$A_DARK'}
 
 # File I/0 family
 - name: File I/0 family (TeX Primitive Control Sequences)
   scope: support.function.primitive.fileio.tex
-  settings: {foreground: '#$ORANGE66'}
+  settings: {foreground: '#$ORANGE$A_DARK'}
 
 # Fonts family
 - name: Fonts family (TeX Primitive Control Sequences)
   scope: support.function.primitive.fonts.tex
-  settings: {foreground: '#$BLUE66'}
+  settings: {foreground: '#$BLUE$A_DARK'}
 
 # Glue family
 - name: Glue family (TeX Primitive Control Sequences)
   scope: support.function.primitive.glue.tex
-  settings: {foreground: '#$MAGENTA66'}
+  settings: {foreground: '#$MAGENTA$A_DARK'}
 
 # Hyphenation family
 - name: Hyphenation family (TeX Primitive Control Sequences)
   scope: support.function.primitive.hyphenation.tex
-  settings: {foreground: '#$RED99'}
+  settings: {foreground: '#$RED$A_MEDIUM'}
 
 # Inserts family
 - name: Inserts family (TeX Primitive Control Sequences)
   scope: support.function.primitive.inserts.tex
-  settings: {foreground: '#$GREEN99'}
+  settings: {foreground: '#$GREEN$A_MEDIUM'}
 
 # Job family
 - name: Job family (TeX Primitive Control Sequences)
   scope: support.function.primitive.job.tex
-  settings: {foreground: '#$ORANGE99'}
+  settings: {foreground: '#$ORANGE$A_MEDIUM'}
 
 # Kern family
 - name: Kern family (TeX Primitive Control Sequences)
   scope: support.function.primitive.kern.tex
-  settings: {foreground: '#$BLUE99'}
+  settings: {foreground: '#$BLUE$A_MEDIUM'}
 
 # Logic family
 - name: Logic family (TeX Primitive Control Sequences)
   scope: support.function.primitive.logic.tex
-  settings: {foreground: '#$RED99'}
+  settings: {foreground: '#$RED$A_MEDIUM'}
 
 # Macro family
 - name: Macro family (TeX Primitive Control Sequences)
   scope: support.function.primitive.macro.tex
-  settings: {foreground: '#$GREEN99'}
+  settings: {foreground: '#$GREEN$A_MEDIUM'}
 
 # Marks family
 - name: Marks family (TeX Primitive Control Sequences)
   scope: support.function.primitive.marks.tex
-  settings: {foreground: '#$ORANGE44'}
+  settings: {foreground: '#$ORANGE$A_DARKER'}
 
 # Math family
 - name: Math family (TeX Primitive Control Sequences)
   scope: support.function.primitive.math.tex
-  settings: {foreground: '#$RED44'}
+  settings: {foreground: '#$RED$A_DARKER'}
 
 # Page family
 - name: Page family (TeX Primitive Control Sequences)
   scope: support.function.primitive.page.tex
-  settings: {foreground: '#$YELLOW44'}
+  settings: {foreground: '#$YELLOW$A_DARKER'}
 
 # Paragraph family
 - name: Paragraph family (TeX Primitive Control Sequences)
   scope: support.function.primitive.paragraph.tex
-  settings: {foreground: '#$BLUE44'}
+  settings: {foreground: '#$BLUE$A_DARKER'}
 
 # Penalties family
 - name: Penalties family (TeX Primitive Control Sequences)
   scope: support.function.primitive.penalties.tex
-  settings: {foreground: '#$MAGENTA44'}
+  settings: {foreground: '#$MAGENTA$A_DARKER'}
 
 # Registers family
 - name: Registers family (TeX Primitive Control Sequences)
   scope: support.function.primitive.registers.tex
-  settings: {foreground: '#$RED44'}
+  settings: {foreground: '#$RED$A_DARKER'}
 
 # Tables family
 - name: Tables family (TeX Primitive Control Sequences)
   scope: support.function.primitive.tables.tex
-  settings: {foreground: '#$YELLOW44'}
+  settings: {foreground: '#$YELLOW$A_DARKER'}
 
 ##
 # General control sequences
@@ -297,20 +297,17 @@ settings:
 ########################################################################
 
 - scope: markup.raw.verbatim.latex
-  settings: {foreground: '#ccc', background: '#444'}
+  settings: {foreground: '#$LIGHT_GREY', background: '#$DARK_GREY'}
 
 - scope: meta.function.section.latex
-  settings: {background: '#444'}
+  settings: {background: '#$DARK_GREY'}
 
 ########################################################################
 # dtx
 ########################################################################
 
-# - scope: comment.block.macrocode.dtx
-#   settings: {background: '#131411'}
-
 - scope: meta.embedded.block.content.macrocode.dtx
-  settings: {background: '#131411'}
+  settings: {background: '#$CYAN$A_DARKER'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#$DARK_GREY'}
@@ -325,7 +322,7 @@ settings:
   settings: {foreground: '#$DARK_GREY'}
 
 - scope: markup.short.verbatim.dtx
-  settings: {fontStyle: bold, foreground: '#$ORANGE99'}
+  settings: {fontStyle: bold, foreground: '#$ORANGE$A_MEDIUM'}
 
-uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
+uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54F$A_LIGHTER4
 ...

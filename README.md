@@ -61,10 +61,6 @@ https://raw.githubusercontent.com/jonschlinkert/sublime-monokai-extended/master/
 
 * White: FFFFFF
 
-# Own additional colors
-
-* Cyan dark 20211c
-* Cyan darker: 131411
 
 
 
