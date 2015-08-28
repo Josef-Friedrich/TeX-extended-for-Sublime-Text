@@ -2,15 +2,15 @@
 ---
 name: LuaTeX
 scopeName: text.tex.luatex
+firstLineMatch: ^%\!TEX program = (luatex|lualatex)
 fileTypes: [tex]
 uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
-firstLineMatch: ^%\!TEX program = (luatex|lualatex)
 
 patterns:
 
-- comment: \directlua
+- comment: Lua commands
   name: support.function.lua.luatex
-  begin: ((\\)directlua|latelua)(\{)
+  begin: ((\\)(directlua|latelua|luadirect|luaexec)(\{))
   beginCaptures:
     '1': {name: support.function.directlua.luatex}
     '2': {name: punctuation.definition.function.luatex}
@@ -23,4 +23,15 @@ patterns:
     - include: source.lua
     - name: support.function.lua.embedded.luatex
 
+- name: support.function.environment.general.luatex
+  begin: (?:\s*)((\\)begin)(\{)(luacode[*]?)(\})
+  end: ((\\)end)(\{)(\4)(\})(?:\s*\n)?
+  captures:
+    '1': {name: support.function.be.latex}
+    '2': {name: punctuation.definition.function.latex}
+    '3': {name: punctuation.definition.arguments.latex}
+    '4': {name: variable.parameter.function.latex}
+    '5': {name: punctuation.definition.arguments.latex}
+  patterns:
+    - include: source.lua
 ...

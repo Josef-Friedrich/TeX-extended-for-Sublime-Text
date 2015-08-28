@@ -14,7 +14,100 @@
 }
 
 
-sds
-sd
-sd
+\latelua{
+local function Ordered()
+  -- nextkey and firstkey are used as markers; nextkey[firstkey] is
+  -- the first key in the table, and nextkey[nextkey] is the last key.
+  -- nextkey[nextkey[nextkey]] should always be nil.
+
+  nextkey[nextkey] = firstkey
+
+  local function onext(self, key)
+    while key ~= nil do
+      key = nextkey[key]
+      local val = self[key]
+      if val ~= nil then return key, val end
+    end
+  end
+
+  -- To save on tables, we use firstkey for the (customised)
+  -- metatable; this line is just for documentation
+  local selfmeta = firstkey
+
+  -- record the nextkey table, for routines lacking the closure
+  selfmeta.__nextkey = nextkey
+
+  -- setting a new key (might) require adding the key to the chain
+  function selfmeta:__newindex(key, val)
+    rawset(self, key, val)
+    if nextkey[key] == nil then -- adding a new key
+      nextkey[nextkey[nextkey]] = key
+      nextkey[nextkey] = key
+    end
+  end
+
+  -- if you don't have the __pairs patch, use this:
+  -- local _p = pairs; function pairs(t, ...)
+  --    return (getmetatable(t).__pairs or _p)(t, ...) end
+  function selfmeta:__pairs() return onext, self, firstkey end
+
+  return setmetatable(key2val, selfmeta)
+end
+}
+
+\luadirect{
+function show(t)
+  print (t.__name .. ":")
+  for k, v in ordered(t) do print(k, v) end
+end
+
+tab.firstName = "Rici"
+tab.lastName = "Lake"
+tab.maternalLastName = "Papert"
+show(tab)
+}
+
+\luaexec{
+local function node(name, left, right)
+
+end
+
+local tree = node(
+  'cow',
+  node('rat', 1, 2),
+  node('pig', node('dog', 3, 4), 5)
+)
+}
+
+\begin{luacode}
+local Vector = {}
+Vector.__index = Vector
+
+function Vector:new(x, y, z)    -- The constructor
+  return setmetatable({x = x, y = y, z = z}, Vector)
+end
+
+function Vector:magnitude()     -- Another method
+  -- Reference the implicit object using self
+  return math.sqrt(self.x^2 + self.y^2 + self.z^2)
+end
+
+local vec = Vector:new(0, 1, 0) -- Create a vector
+print(vec:magnitude())          -- Call a method (output: 1)
+print(vec.x)                    -- Access a member variable (output: 0)
+\end{luacode}
+
+\begin{luacode*}
+Point = {}
+
+Point.new = function(x, y)
+  return {x = x, y = y}  --  return {["x"] = x, ["y"] = y}
+end
+
+Point.set_x = function(point, x)
+  point.x = x  --  point["x"] = x;
+end
+\end{luacode*}
+
+
 

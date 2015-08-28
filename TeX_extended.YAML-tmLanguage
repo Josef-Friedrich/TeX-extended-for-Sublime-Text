@@ -7,6 +7,10 @@ uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
 
 patterns:
 
+- include: text.tex.luatex
+
+- include: text.tex.latex
+
 ##
 # TeX Primitive Control Sequences
 # http://www.tug.org/utilities/plain/cseq.html
@@ -123,5 +127,4 @@ patterns:
 
 - name: constant.numeric.dimension.tex
   match: -?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)
-
 ...
