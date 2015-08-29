@@ -4,7 +4,7 @@ name: LuaTeX
 scopeName: text.tex.luatex
 firstLineMatch: ^%\!TEX program = (luatex|lualatex)
 fileTypes: [tex]
-uuid: 634249ca-82b0-4971-9c82-c1a85e13c274
+uuid: b1e4b1e2-4e1d-11e5-9e98-6b3ab1a77b4f
 
 patterns:
 

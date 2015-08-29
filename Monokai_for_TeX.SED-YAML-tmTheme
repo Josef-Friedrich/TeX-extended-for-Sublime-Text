@@ -324,5 +324,5 @@ settings:
 - scope: markup.short.verbatim.dtx
   settings: {fontStyle: bold, foreground: '#$ORANGE$A_MEDIUM'}
 
-uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54F$A_LIGHTER4
+uuid: c7cb6e1a-4e1d-11e5-9e13-a336f6b694ff
 ...
