@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/jf/.config/sublime-text-2/Packages/User/TeX-extended",
+			"file_exclude_patterns": ["*.tmLanguage", "*.tmLanguage.cache", "*.tmTheme.cache", "*.tmTheme"]
+		}
+	],
+	"settings":
+	{
+		"rulers":
+		[
+			72
+		]
+	}
+
+}
