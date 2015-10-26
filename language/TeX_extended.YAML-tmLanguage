@@ -9,7 +9,7 @@ patterns:
 
 - include: text.tex.luatex
 
-- include: text.tex.latex
+#- include: text.tex.latex
 
 ##
 # TeX Primitive Control Sequences

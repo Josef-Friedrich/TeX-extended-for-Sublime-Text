@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
 name: DTX (Documented LaTeX) [extended]
-scopeName: source.dtx
+scopeName: text.latex.dtx
 fileTypes: [dtx]
 uuid: 97df4a50-4e1d-11e5-8302-eb6c379556cf
 
@@ -43,15 +43,13 @@ patterns:
     - include: '#shortVerbatim'
     - include: '#commentACaret'
 
-# - name: comment.line.percentage.tex.dtx
-#   match: (%).*$\n?
-#   captures:
-#     '1': {name: punctuation.definition.comment.tex.dtx}
-#   patterns:
+- name: comment.line.percentage.tex.dtx
+  match: (%).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.tex.dtx}
+  patterns:
 
-
-
-- include: text.tex.latex
+# - include: text.tex.latex
 
 repository:
   shortVerbatim:
