@@ -7,13 +7,21 @@ uuid: 97df4a50-4e1d-11e5-8302-eb6c379556cf
 
 patterns:
 
-- comment: Lua file
+##
+# Readme
+##
+
+- comment: Readme
   name: file.readme.dtx
   begin: \%<\*readme>.*\n$
   end: \%</readme>
   contentName: meta.embedded.block.content.macrocode.dtx
   patterns:
     - include: text.html.markdown
+
+##
+# Lua file
+##
 
 - comment: Lua file
   name: file.lua.dtx
@@ -47,9 +55,16 @@ patterns:
   match: (%).*$\n?
   captures:
     '1': {name: punctuation.definition.comment.tex.dtx}
-  patterns:
 
-# - include: text.tex.latex
+##
+# Include LaTeX defintions.
+##
+
+- include: text.tex.exlatex
+
+##
+# Repository
+##
 
 repository:
   shortVerbatim:
