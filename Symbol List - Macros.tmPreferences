@@ -5,15 +5,14 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>meta.function.environment.general.latex</string>
+	<string>storage.type.function.macro.latex</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
 		<string>
-		s/.*\\begin\{([^\n\}]*)\}/ENV $1 kill/g;
-		s/kill.*//g;
+		s/.*\\newcommand\{([^ \n\}]*)\}/MCR $1/g;
 	  </string>
 	</dict>
 	<key>uuid</key>

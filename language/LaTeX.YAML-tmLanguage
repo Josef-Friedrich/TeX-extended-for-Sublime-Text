@@ -214,10 +214,12 @@ patterns:
   patterns:
   - include: $base
 
-- name: storage.type.function.latex
-  match: (\\)(newcommand|renewcommand)\b
+- name: storage.type.function.macro.latex
+  match: (\\)(newcommand|renewcommand)\{(\\[a-zA-Z@]*)\}
   captures:
     '1': {name: punctuation.definition.function.latex}
+    '2': {name: punctuation.definition.arguments.latex}
+    '3': {name: variable.parameter.function.latex}
 
 - contentName: meta.paragraph.margin.latex
   begin: ((\\)marginpar)(\{)

@@ -730,6 +730,30 @@
 					<key>name</key>
 					<string>punctuation.definition.function.latex</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.arguments.latex</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.function.latex</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\\)(newcommand|renewcommand)\{(\\[a-zA-Z@]*)\}</string>
+			<key>name</key>
+			<string>storage.type.function.macro.latex</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.function.latex</string>
+				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\\)(newcommand|renewcommand)\b</string>
