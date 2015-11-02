@@ -4,6 +4,4 @@
 *.sty
 *.dtx
 *.cls
-*.tmTheme
-*.tmLanguage
 *.sublime-workspace

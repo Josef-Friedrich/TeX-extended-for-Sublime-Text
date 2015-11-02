@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>cls</string>
+	</array>
+	<key>name</key>
+	<string>cls (LaTeX)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.tex.exlatex</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.tex.latex.cls</string>
+	<key>uuid</key>
+	<string>df2b5b42-4e1d-11e5-a4d9-c72665dbdd8d</string>
+</dict>
+</plist>
