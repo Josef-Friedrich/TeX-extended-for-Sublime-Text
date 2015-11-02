@@ -299,7 +299,10 @@ settings:
   settings: {foreground: '#$LIGHT_GREY', background: '#$DARK_GREY'}
 
 - scope: meta.function.section.latex
-  settings: {background: '#$DARK_GREY'}
+  settings: {background: '#$RED$A_MEDIUM'}
+
+- scope: meta.footnote.latex
+  settings: {foreground: '#$LIGHT_GREY'}
 
 ########################################################################
 # dtx

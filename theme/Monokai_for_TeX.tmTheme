@@ -688,7 +688,16 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#49483E</string>
+				<string>#F9267299</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.footnote.latex</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#75715E</string>
 			</dict>
 		</dict>
 		<dict>
