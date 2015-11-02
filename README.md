@@ -36,31 +36,33 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 
 http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme
 
-* Red: F92672
-* Green: A6E22E
-* Yellow: E6DB74
-* Orange: FD971F
-* Blue: 66D9EF
-* Magenta: AE81FF
-* White: F8F8F0
-* Light Grey: 75715E
-* Dark Grey: 49483E
-* Cyan: 272822
+* Red: F92672 ($RED)
+* Green: A6E22E ($GREEN)
+* Yellow: E6DB74 ($YELLOW)
+* Orange: FD971F ($ORANGE)
+* Blue: 66D9EF ($BLUE)
+* Magenta: AE81FF ($MAGENTA)
+* White: F8F8F0 ($WHITE)
+* Light Grey: 75715E ($LIGHT_GREY)
+* Dark Grey: 49483E ($DARK_GREY)
+* Cyan: 272822 ($CYAN)
 
 ## Additional colors in the Sublime Text Monokai Theme:
 
-* White: F8F8F2
-* Light Grey: CFCFC2
-* Dark Grey: F8F8F2A5
-* Dark Grey: 3E3D32
-* Orange:  9D550FB0
+* Pure White: FFFFFF ($SUB_PURE_WHITE)
+* White: F8F8F2 ($SUB_WHITE)
+* Light Grey: CFCFC2 ($SUB_LIGHT_GREY)
+* Dark Grey: 3E3D32  ($SUB_DARK_GREY)
+* Orange:  9D550FB0 $SUB_ORANGE)
+* Black: 000000 ($SUB_BLACK)
 
-## Additional colors in the Sublime Text Monokai extended Theme:
+## Alpha channel
 
-https://raw.githubusercontent.com/jonschlinkert/sublime-monokai-extended/master/Monokai%20Extended.tmTheme
-
-* White: FFFFFF
-
+* Darker: 44 ($A_DARKER)
+* Dark: 66 ($A_DARK)
+* Medium: 99 ($A_MEDIUM)
+* Light: A5 ($A_LIGHT)
+* Lighter: B0 ($A_LIGHTER)
 
 
 
