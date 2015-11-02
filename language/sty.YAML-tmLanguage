@@ -6,7 +6,6 @@ fileTypes: [sty]
 uuid: ec484c40-4e1d-11e5-8b82-7ba51ba46524
 
 patterns:
-
-  - include: text.tex.latex
+  - include: text.tex.exlatex
 
 ...

@@ -43,6 +43,23 @@ patterns:
 
     - include: '#commentBlockDtx'
 
+##
+# LaTeX
+##
+
+- comment: Macro code
+  name: meta.macrocode.dtx
+  begin: \%    \\begin{macrocode}.*\n$
+  beginCaptures:
+    '0': {name: comment.line.macrocode.begin.dtx}
+  end: \%    \\end{macrocode}.*\n$
+  endCaptures:
+    '0': {name: comment.line.macrocode.end.dtx}
+  contentName: meta.embedded.block.content.macrocode.dtx
+  patterns:
+    - include: text.tex.exlatex
+    - name: exlatex.dtx
+
 - name: comment.block.tex.dtx
   begin: ^%
   end: $

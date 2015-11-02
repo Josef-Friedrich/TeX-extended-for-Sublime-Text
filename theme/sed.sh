@@ -1,4 +1,4 @@
-#! /bin/sed -f
+#! /usr/bin/sed -f
 
 s/$RED/F92672/g
 s/$GREEN/A6E22E/g

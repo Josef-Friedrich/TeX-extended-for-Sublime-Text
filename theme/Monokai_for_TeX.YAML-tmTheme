@@ -7,7 +7,6 @@ name: Monokai for TeX
 # Monokai with some additions
 ##
 
-
 settings:
 - settings: {
     activeGuide: '#9D550FB0',
@@ -307,7 +306,7 @@ settings:
 ########################################################################
 
 - scope: meta.embedded.block.content.macrocode.dtx
-  settings: {background: '#27282244'}
+  settings: {background: '#49483E'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#49483E'}
@@ -324,5 +323,5 @@ settings:
 - scope: markup.short.verbatim.dtx
   settings: {fontStyle: bold, foreground: '#FD971F99'}
 
-uuid: ADD7FDE7-C6BE-454B-A71A-7951ED54FB04
+uuid: c7cb6e1a-4e1d-11e5-9e13-a336f6b694ff
 ...

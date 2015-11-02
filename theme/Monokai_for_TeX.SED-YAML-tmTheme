@@ -7,7 +7,6 @@ name: Monokai for TeX
 # Monokai with some additions
 ##
 
-
 settings:
 - settings: {
     activeGuide: '#$SUB_ORANGE$A_LIGHTER',
@@ -307,7 +306,7 @@ settings:
 ########################################################################
 
 - scope: meta.embedded.block.content.macrocode.dtx
-  settings: {background: '#$CYAN$A_DARKER'}
+  settings: {background: '#$DARK_GREY'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#$DARK_GREY'}

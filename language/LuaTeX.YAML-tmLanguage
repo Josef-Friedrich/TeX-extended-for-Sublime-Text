@@ -34,4 +34,5 @@ patterns:
     '5': {name: punctuation.definition.arguments.latex}
   patterns:
     - include: source.lua
+    - name: support.function.lua.embedded.luatex
 ...
