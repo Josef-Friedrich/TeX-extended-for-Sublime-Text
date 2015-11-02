@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
 name: LaTeX [extended]
-scopeName: text.tex.exlatex
+scopeName: text.tex.latex
 fileTypes: [tex]
 uuid: a4f75886-4e1d-11e5-ab31-97948c2685e7
 

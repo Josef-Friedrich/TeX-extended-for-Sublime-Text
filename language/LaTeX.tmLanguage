@@ -1486,7 +1486,7 @@ Put specific matches for particular LaTeX keyword.functions before the last two 
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>text.tex.exlatex</string>
+	<string>text.tex.latex</string>
 	<key>uuid</key>
 	<string>a4f75886-4e1d-11e5-ab31-97948c2685e7</string>
 </dict>

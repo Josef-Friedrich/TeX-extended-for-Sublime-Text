@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>include</key>
-			<string>text.tex.exlatex</string>
+			<string>text.tex.latex</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
