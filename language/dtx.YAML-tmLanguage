@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
 ---
 name: DTX (Documented LaTeX) [extended]
-scopeName: text.latex.dtx
+scopeName: text.tex.latex.dtx
 fileTypes: [dtx]
 uuid: 97df4a50-4e1d-11e5-8302-eb6c379556cf
 
@@ -57,8 +57,7 @@ patterns:
     '0': {name: comment.line.macrocode.end.dtx}
   contentName: meta.embedded.block.content.macrocode.dtx
   patterns:
-    - include: text.tex.exlatex
-    - name: exlatex.dtx
+    - include: text.tex.latex
 
 - name: comment.block.tex.dtx
   begin: ^%

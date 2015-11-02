@@ -116,11 +116,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>text.tex.exlatex</string>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>exlatex.dtx</string>
+					<string>text.tex.latex</string>
 				</dict>
 			</array>
 		</dict>
@@ -222,7 +218,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.latex.dtx</string>
+	<string>text.tex.latex.dtx</string>
 	<key>uuid</key>
 	<string>97df4a50-4e1d-11e5-8302-eb6c379556cf</string>
 </dict>
