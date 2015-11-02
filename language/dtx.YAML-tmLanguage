@@ -59,6 +59,8 @@ patterns:
   patterns:
     - include: text.tex.latex
 
+- include: text.tex.latex
+
 - name: comment.block.tex.dtx
   begin: ^%
   end: $

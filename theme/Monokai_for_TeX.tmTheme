@@ -706,7 +706,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#49483E</string>
+				<string>#49483E99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -729,11 +729,20 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>comment.line.macrocode</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#49483EB0</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>comment.block.content.tex.dtx</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CFCFC2</string>
+				<string>#CFCFC299</string>
 			</dict>
 		</dict>
 		<dict>

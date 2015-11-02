@@ -121,6 +121,10 @@
 			</array>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>text.tex.latex</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^%</string>
 			<key>contentName</key>
