@@ -1,0 +1,7 @@
+# [PackageDev] target_format: plist, ext: tmPreferences
+name: Symbol List for Macros
+uuid: 568bb2de-817e-11e5-95aa-6b7970f317e0
+scope: storage.type.function.latex, support.function.general
+settings:
+  showInSymbolList: 1
+  symbolTransformation: "s/\\newcommand\{([^\}]+)\}/L $1/g;"

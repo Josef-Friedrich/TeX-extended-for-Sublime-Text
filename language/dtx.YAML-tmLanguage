@@ -59,8 +59,6 @@ patterns:
   patterns:
     - include: text.tex.latex
 
-- include: text.tex.latex
-
 - name: comment.block.tex.dtx
   begin: ^%
   end: $
@@ -78,7 +76,7 @@ patterns:
 # Include LaTeX defintions.
 ##
 
-- include: text.tex.exlatex
+- include: text.tex.latex
 
 ##
 # Repository

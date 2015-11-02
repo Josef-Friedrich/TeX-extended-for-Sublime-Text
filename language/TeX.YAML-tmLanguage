@@ -93,16 +93,28 @@ patterns:
   match: \\(cr|crcr|everycr|halign|noalign|omit|span|tabskip|valign)\b
 
 ##
+# None word control sequences
+##
+
+- comment: The abbreviation of the \newline command.
+  name: support.function.primitive.noneword.newline.tex
+  match: \\\\
+
+- comment: Arguments: e. g. #1 #2 etc
+  name: variable.parameter.tex
+  match: \#\d
+
+##
 # General control sequences
 ##
 
 - comment: Control sequences like \CC@command@command
   name: support.function.general.at.tex
-  match: \\(?=[\\A-Za-z]*[@])[A-Za-z@]+
+  match: \\(?=[A-Za-z]*[@])[A-Za-z@]+
 
 - comment: Control sequences like \CommandCommand
   name: support.function.general.upperlower.tex
-  match: \\(?=[\\a-z]*[A-Z])[A-Za-z]+
+  match: \\(?=[a-z]*[A-Z])[A-Za-z]+
 
 - comment: Control sequences like \command
   name: support.function.general.lower.tex
@@ -120,11 +132,12 @@ patterns:
 - name: comment.line.percentage.directive.texshop.tex
   match: ^%!TEX (\S*) =\s*(.*)\s*$
 
-# - name: comment.line.percentage.tex
-#   match: (%).*$\n?
-#   captures:
-#     '1': {name: punctuation.definition.comment.tex}
+- name: comment.line.percentage.tex
+  match: (%).*$\n?
+  captures:
+    '1': {name: punctuation.definition.comment.tex}
 
-- name: constant.numeric.dimension.tex
+- comment: All possible TeX length dimensons.
+  name: constant.numeric.dimension.tex
   match: -?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)
 ...

@@ -168,9 +168,25 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>The abbreviation of the \newline command.</string>
+			<key>match</key>
+			<string>\\\\</string>
+			<key>name</key>
+			<string>support.function.primitive.noneword.newline.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Arguments</string>
+			<key>match</key>
+			<string>\#\d</string>
+			<key>name</key>
+			<string>variable.parameter.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Control sequences like \CC@command@command</string>
 			<key>match</key>
-			<string>\\(?=[\\A-Za-z]*[@])[A-Za-z@]+</string>
+			<string>\\(?=[A-Za-z]*[@])[A-Za-z@]+</string>
 			<key>name</key>
 			<string>support.function.general.at.tex</string>
 		</dict>
@@ -178,7 +194,7 @@
 			<key>comment</key>
 			<string>Control sequences like \CommandCommand</string>
 			<key>match</key>
-			<string>\\(?=[\\a-z]*[A-Z])[A-Za-z]+</string>
+			<string>\\(?=[a-z]*[A-Z])[A-Za-z]+</string>
 			<key>name</key>
 			<string>support.function.general.upperlower.tex</string>
 		</dict>
@@ -211,6 +227,22 @@
 			<string>comment.line.percentage.directive.texshop.tex</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.tex</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(%).*$\n?</string>
+			<key>name</key>
+			<string>comment.line.percentage.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>All possible TeX length dimensons.</string>
 			<key>match</key>
 			<string>-?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)</string>
 			<key>name</key>
