@@ -17,7 +17,7 @@ settings:
     bracketsOptions: underline,
     caret: '#$WHITE',
     findHighlight: '#$ORANGE',
-    findHighlightForeground: '#$SUB_BLACK',
+    findHighlightForeground: '#$BLACK',
     foreground: '#$SUB_WHITE',
     invisibles: '#$SUB_DARK_GREY',
     lineHighlight: '#$SUB_DARK_GREY',
@@ -309,7 +309,7 @@ settings:
 ########################################################################
 
 - scope: meta.embedded.block.content.macrocode.dtx
-  settings: {background: '#$DARK_GREY$A_MEDIUM'}
+  settings: {background: '#$BLACK$A_DARK'}
 
 - scope: punctuation.definition.comment.tex.dtx
   settings: {foreground: '#$DARK_GREY'}
