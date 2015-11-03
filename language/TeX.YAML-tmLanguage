@@ -9,8 +9,6 @@ patterns:
 
 - include: text.tex.luatex
 
-#- include: text.tex.latex
-
 ##
 # TeX Primitive Control Sequences
 # http://www.tug.org/utilities/plain/cseq.html
@@ -100,7 +98,7 @@ patterns:
   name: support.function.primitive.noneword.newline.tex
   match: \\\\
 
-- comment: Arguments: e. g. #1 #2 etc
+- comment: Arguments, e. g. #1 #2 etc
   name: variable.parameter.tex
   match: \#\d
 
@@ -140,4 +138,15 @@ patterns:
 - comment: All possible TeX length dimensons.
   name: constant.numeric.dimension.tex
   match: -?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)
+
+##
+# Invalid characters
+##
+
+#- comment: Illegal characters in normal text.
+#  name: invalid.illegal
+#  match: (\{|\}|\$|&|\#|_)
+
+- name: support.function.primitive.escape.tex
+  match: (\\\{|\\\}|\\\$|\\&|\\\#|\\_)
 ...

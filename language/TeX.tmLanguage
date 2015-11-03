@@ -176,7 +176,7 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Arguments</string>
+			<string>Arguments, e. g.</string>
 			<key>match</key>
 			<string>\#\d</string>
 			<key>name</key>
@@ -247,6 +247,12 @@
 			<string>-?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)</string>
 			<key>name</key>
 			<string>constant.numeric.dimension.tex</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(\\\{|\\\}|\\\$|\\&amp;|\\\#|\\_)</string>
+			<key>name</key>
+			<string>support.function.primitive.escape.tex</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
