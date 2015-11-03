@@ -299,7 +299,7 @@ settings:
   settings: {foreground: '#75715E', background: '#49483E'}
 
 - scope: meta.function.section.latex
-  settings: {background: '#F9267299'}
+  settings: {background: '#75715E44'}
 
 - scope: meta.footnote.latex
   settings: {foreground: '#75715E'}
