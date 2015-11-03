@@ -17,3 +17,7 @@ wget -NP cls http://mirrors.ctan.org/macros/latex/contrib/hletter/hletter.cls
 # LaTeX
 wget -NP latex http://mirrors.ctan.org/macros/latex/contrib/outline/outline.tex
 wget -NP latex http://mirrors.ctan.org/macros/latex/contrib/hvfloat/hvfloat.tex
+
+wget -NP latex https://raw.githubusercontent.com/stkerr/Thesis/master/demo-mathematics.tex
+wget -NP latex https://raw.githubusercontent.com/stkerr/Thesis/master/cryptographyoverview.tex
+wget -NP latex https://raw.githubusercontent.com/jrk/uggedal-thesis/master/src/social.navigation.tex

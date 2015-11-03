@@ -151,6 +151,10 @@ settings:
   settings: {foreground: '#E6DB74'}
 - scope: markup.raw.block
   settings: {background: '#49483E'}
+- scope: markup.italic
+  settings: {fontStyle: italic}
+- scope: markup.bold
+  settings: {fontStyle: bold}
 
 # punctuation
 - scope: punctuation.definition.keyword.tex
