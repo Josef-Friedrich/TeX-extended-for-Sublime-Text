@@ -178,7 +178,7 @@
 			<key>comment</key>
 			<string>Arguments, e. g.</string>
 			<key>match</key>
-			<string>\#\d</string>
+			<string>\#[1-9]</string>
 			<key>name</key>
 			<string>variable.parameter.tex</string>
 		</dict>
@@ -252,7 +252,7 @@
 			<key>match</key>
 			<string>(\\\{|\\\}|\\\$|\\&amp;|\\\#|\\_)</string>
 			<key>name</key>
-			<string>support.function.primitive.escape.tex</string>
+			<string>constant.character.escape.tex</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

@@ -100,7 +100,7 @@ patterns:
 
 - comment: Arguments, e. g. #1 #2 etc
   name: variable.parameter.tex
-  match: \#\d
+  match: \#[1-9]
 
 ##
 # General control sequences
@@ -147,6 +147,6 @@ patterns:
 #  name: invalid.illegal
 #  match: (\{|\}|\$|&|\#|_)
 
-- name: support.function.primitive.escape.tex
+- name: constant.character.escape.tex
   match: (\\\{|\\\}|\\\$|\\&|\\\#|\\_)
 ...

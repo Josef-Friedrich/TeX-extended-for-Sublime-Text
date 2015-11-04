@@ -720,11 +720,20 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>meta.embedded.block</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#00000044</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.embedded.block.content.macrocode.dtx</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#00000066</string>
+				<string>#00000044</string>
 			</dict>
 		</dict>
 		<dict>

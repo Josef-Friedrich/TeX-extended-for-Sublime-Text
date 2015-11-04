@@ -7,6 +7,8 @@ uuid: a4f75886-4e1d-11e5-ab31-97948c2685e7
 
 patterns:
 
+- include: text.tex.luatex
+
 - name: meta.space-after-command.latex
   match: (?=\s)(?<=\\[\w@]|\\[\w@]{2}|\\[\w@]{3}|\\[\w@]{4}|\\[\w@]{5}|\\[\w@]{6})\s
 

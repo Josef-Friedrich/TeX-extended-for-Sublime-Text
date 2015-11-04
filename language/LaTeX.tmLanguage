@@ -19,6 +19,10 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>include</key>
+			<string>text.tex.luatex</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(?=\s)(?&lt;=\\[\w@]|\\[\w@]{2}|\\[\w@]{3}|\\[\w@]{4}|\\[\w@]{5}|\\[\w@]{6})\s</string>
 			<key>name</key>
@@ -745,20 +749,6 @@
 			<string>(\\)(newcommand|renewcommand)\{(\\[a-zA-Z@]*)\}</string>
 			<key>name</key>
 			<string>storage.type.function.macro.latex</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.function.latex</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\\)(newcommand|renewcommand)\b</string>
-			<key>name</key>
-			<string>storage.type.function.latex</string>
 		</dict>
 		<dict>
 			<key>begin</key>

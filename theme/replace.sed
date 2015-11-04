@@ -1,3 +1,6 @@
+#! /bin/sed -f
+
+# BSD like (Mac OS X)
 #! /usr/bin/sed -f
 
 s/$RED/F92672/g
