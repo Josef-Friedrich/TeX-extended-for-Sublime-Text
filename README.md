@@ -1,8 +1,17 @@
-# Sublime Text: Extended support for TeX / LaTeX / dtx (Documented LaTeX)
+# Sublime Text 2: Extended support for TeX / LaTeX / dtx (Documented LaTeX)
+
+This repository provides a extended theme and a extended TeX / LaTex / [dtx](http://www.tex.ac.uk/FAQ-dtx.html) language defintion for [Sublime Text 2](http://www.sublimetext.com/2).
+
+Sublime Text 2 itself supports editing of TeX files pretty good. 
+The [LaTeXTools plugin](https://github.com/SublimeText/LaTeXTools) for Sublime Text 2 / 3 increases the TeX support considerably. However, both Sublime Text 2 and LaTeXTools focus on the writer of TeX texts not on the writer of TeX packages and classes. This repository tries to fill this gap. The main features are:
+
+* LaTeX support in *.sty files (packages) and *.cls files (classes).
+* LaTeX support in *.dtx files (Documented LaTeX)
+* Support for LuaTeX (embedded Lua code is highlighted correctly)
 
 # Installation
 
-    git clone git@github.com:Josef-Friedrich/sublime-text-dtx.git dtx
+    git clone git@github.com:Josef-Friedrich/TeX-extended-for-Sublime-Text.git
 
 # Required development packages
 
