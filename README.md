@@ -14,7 +14,7 @@
 Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 
     [
-        { "keys": ["f11"], "command": "toggle_selection_scope" },
+        { "keys": ["f10"], "command": "toggle_selection_scope" },
         { "keys": ["f12"], "command": "convert_file" }
     ]
 
@@ -24,7 +24,7 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html
 * http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html
-* http://www.geocities.jp/kosako3/oniguruma/doc/RE.txt
+* [Oniguruma Regular Expressions](https://raw.githubusercontent.com/kkos/oniguruma/master/doc/RE)
 * http://www.apeth.com/nonblog/stories/textmatebundle.html
 * https://manual.macromates.com/en/language_grammars
 
@@ -54,7 +54,7 @@ http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme
 * Light Grey: CFCFC2 ($SUB_LIGHT_GREY)
 * Dark Grey: 3E3D32  ($SUB_DARK_GREY)
 * Orange:  9D550FB0 $SUB_ORANGE)
-* Black: 000000 ($SUB_BLACK)
+* Black: 000000 ($BLACK)
 
 ## Alpha channel
 
