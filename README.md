@@ -20,21 +20,29 @@ Open console `` ctrl+` `` then type `sublime.log_commands(True)`.
 
 # Useful documentation
 
-## tmLanguage
+## Language
 
-* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html
-* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html
-* [Oniguruma Regular Expressions](https://raw.githubusercontent.com/kkos/oniguruma/master/doc/RE)
-* http://www.apeth.com/nonblog/stories/textmatebundle.html
-* https://manual.macromates.com/en/language_grammars
+* Sublime Text
+  * [Syntax Definitions](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/extensibility/syntaxdefs.html)
+  * [Syntax Definitions Reference](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/syntaxdefs.html)
 
-## tmTheme
+* TextMate
+  * [Writing a TextMate Grammar](http://www.apeth.com/nonblog/stories/textmatebundle.html)
+  * [Language Grammars](https://manual.macromates.com/en/language_grammars)
 
-* http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/color_schemes.html
+* Libraries
+  * [Oniguruma Regular Expressions](https://raw.githubusercontent.com/kkos/oniguruma/master/doc/RE)
+
+## Theme
+
+* Sublime Text
+  * [Color Schemes Reference](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/color_schemes.html)
 
 # Monokai Colors 
 
-http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme
+The [original Monokai-Theme](http://www.monokai.nl/blog/2006/07/15/textmate-color-theme) 
+for [TextMate](http://www.monokai.nl/blog/wp-content/asdev/Monokai.tmTheme)
+has these colors: 
 
 * Red: F92672 ($RED)
 * Green: A6E22E ($GREEN)
