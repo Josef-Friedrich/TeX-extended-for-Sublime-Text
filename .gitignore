@@ -1,8 +1,5 @@
 *.DS_Store
 *.cache
-*.sty
-*.dtx
-*.cls
 *.sublime-workspace
 *.aux
 *.fdb_latexmk
