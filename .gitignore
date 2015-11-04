@@ -5,3 +5,8 @@
 *.dtx
 *.cls
 *.sublime-workspace
+*.aux
+*.fdb_latexmk
+*.log
+*.pdf
+*.synctex.gz
