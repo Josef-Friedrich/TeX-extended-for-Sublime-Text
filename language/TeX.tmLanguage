@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>tex</string>
+		<string>ins</string>
 	</array>
 	<key>name</key>
 	<string>TeX [extended]</string>
