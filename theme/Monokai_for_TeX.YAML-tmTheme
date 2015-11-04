@@ -312,10 +312,7 @@ settings:
 # dtx
 ########################################################################
 
-- scope: meta.embedded.block
-  settings: {background: '#00000044'}
-
-- scope: meta.embedded.block.content.macrocode.dtx
+- scope: meta.embedded.block.content
   settings: {background: '#00000044'}
 
 - scope: punctuation.definition.comment.tex.dtx

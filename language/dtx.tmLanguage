@@ -16,7 +16,7 @@
 			<key>comment</key>
 			<string>Readme</string>
 			<key>contentName</key>
-			<string>meta.embedded.block.content.macrocode.dtx</string>
+			<string>meta.embedded.block.content.markdown.dtx</string>
 			<key>end</key>
 			<string>\%&lt;/readme&gt;</string>
 			<key>name</key>
@@ -54,7 +54,7 @@
 					<key>comment</key>
 					<string>Macro code</string>
 					<key>contentName</key>
-					<string>meta.embedded.block.content.macrocode.dtx</string>
+					<string>meta.embedded.block.content.lua.dtx</string>
 					<key>end</key>
 					<string>\%    \\end{macrocode}.*\n$</string>
 					<key>endCaptures</key>
@@ -99,7 +99,7 @@
 			<key>comment</key>
 			<string>Macro code</string>
 			<key>contentName</key>
-			<string>meta.embedded.block.content.macrocode.dtx</string>
+			<string>meta.embedded.block.content.latex.dtx</string>
 			<key>end</key>
 			<string>\%    \\end{macrocode}.*\n$</string>
 			<key>endCaptures</key>

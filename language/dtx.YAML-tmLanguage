@@ -15,7 +15,7 @@ patterns:
   name: file.readme.dtx
   begin: \%<\*readme>.*\n$
   end: \%</readme>
-  contentName: meta.embedded.block.content.macrocode.dtx
+  contentName: meta.embedded.block.content.markdown.dtx
   patterns:
     - include: text.html.markdown
 
@@ -36,7 +36,7 @@ patterns:
       end: \%    \\end{macrocode}.*\n$
       endCaptures:
         '0': {name: comment.line.macrocode.end.dtx}
-      contentName: meta.embedded.block.content.macrocode.dtx
+      contentName: meta.embedded.block.content.lua.dtx
       patterns:
         - include: source.lua
         - name: luacode.dtx
@@ -55,7 +55,7 @@ patterns:
   end: \%    \\end{macrocode}.*\n$
   endCaptures:
     '0': {name: comment.line.macrocode.end.dtx}
-  contentName: meta.embedded.block.content.macrocode.dtx
+  contentName: meta.embedded.block.content.latex.dtx
   patterns:
     - include: text.tex.latex
 
