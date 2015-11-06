@@ -5,6 +5,8 @@
 	<key>fileTypes</key>
 	<array>
 		<string>tex</string>
+		<string>cls</string>
+		<string>sty</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^\\documentclass(?!.*\{beamer\})</string>
