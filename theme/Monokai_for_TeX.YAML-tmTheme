@@ -227,11 +227,6 @@ settings:
   scope: support.function.primitive.kern.tex
   settings: {foreground: '#66D9EF99'}
 
-# Logic family
-- name: Logic family (TeX Primitive Control Sequences)
-  scope: support.function.primitive.logic.tex
-  settings: {foreground: '#F9267299'}
-
 # Macro family
 - name: Macro family (TeX Primitive Control Sequences)
   scope: support.function.primitive.macro.tex

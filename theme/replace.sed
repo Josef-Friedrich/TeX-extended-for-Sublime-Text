@@ -1,4 +1,4 @@
-#! /bin/sed -f
+#! /usr/bin/sed -f
 
 # BSD like (Mac OS X)
 #! /usr/bin/sed -f

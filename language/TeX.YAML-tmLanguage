@@ -9,6 +9,18 @@ patterns:
 
 - include: text.tex.luatex
 
+- comment: \if which are created by \newifs
+  name: keyword.control.if.tex
+  match: \\if[a-zA-Z@]*
+
+- comment: e. g. \answerfalse  \answertrue
+  name: keyword.control.boolean.tex
+  match: \\[a-zA-Z@]*(true|false)
+
+- comment: Logic family (TeX Primitive Control Sequences)
+  name: keyword.control.tex
+  match: \\(newif|else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b
+
 ##
 # TeX Primitive Control Sequences
 # http://www.tug.org/utilities/plain/cseq.html
@@ -54,9 +66,10 @@ patterns:
   name: support.function.primitive.kern.tex
   match: \\(kern|lastkern|lower|moveleft|moveright|raise|unkern)\b
 
-- comment: Logic family (TeX Primitive Control Sequences)
-  name: support.function.primitive.logic.tex
-  match: \\(else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b
+# \else \fi etc should be keyword.control
+#- comment: Logic family (TeX Primitive Control Sequences)
+#  name: support.function.primitive.logic.tex
+#  match: \\(else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b
 
 - comment: Macro family (TeX Primitive Control Sequences)
   name: support.function.primitive.macro.tex

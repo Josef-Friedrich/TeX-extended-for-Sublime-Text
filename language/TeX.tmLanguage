@@ -17,6 +17,30 @@
 		</dict>
 		<dict>
 			<key>comment</key>
+			<string>\if which are created by \newifs</string>
+			<key>match</key>
+			<string>\\if[a-zA-Z@]*</string>
+			<key>name</key>
+			<string>keyword.control.if.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>\if which are created by \newifs</string>
+			<key>match</key>
+			<string>\\[a-zA-Z@]*(true|false)</string>
+			<key>name</key>
+			<string>keyword.control.boolean.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Logic family (TeX Primitive Control Sequences)</string>
+			<key>match</key>
+			<string>\\(newif|else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b</string>
+			<key>name</key>
+			<string>keyword.control.tex</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Box family (TeX Primitive Control Sequences)</string>
 			<key>match</key>
 			<string>\\(badness|box|boxmaxdepth|cleaders|copy|dp|everyhbox|everyvbox|hbadness|hbox|hfuzz|hrule|ht|lastbox|leaders|overfullrule|prevdepth|setbox|unhbox|unhcopy|unvbox|unvcopy|vbadness|vbox|vfuzz|vrule|vtop|wd|xleaders)\b</string>
@@ -94,14 +118,6 @@
 			<string>\\(kern|lastkern|lower|moveleft|moveright|raise|unkern)\b</string>
 			<key>name</key>
 			<string>support.function.primitive.kern.tex</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Logic family (TeX Primitive Control Sequences)</string>
-			<key>match</key>
-			<string>\\(else|fi|if|ifcase|ifcat|ifdim|ifeof|iffalse|ifhbox|ifhmode|ifinner|ifmmode|ifnum|ifodd|iftrue|ifvbox|ifvmode|ifvoid|ifx|or)\b</string>
-			<key>name</key>
-			<string>support.function.primitive.logic.tex</string>
 		</dict>
 		<dict>
 			<key>comment</key>

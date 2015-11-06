@@ -548,17 +548,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Logic family (TeX Primitive Control Sequences)</string>
-			<key>scope</key>
-			<string>support.function.primitive.logic.tex</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#F9267299</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Macro family (TeX Primitive Control Sequences)</string>
 			<key>scope</key>
 			<string>support.function.primitive.macro.tex</string>
