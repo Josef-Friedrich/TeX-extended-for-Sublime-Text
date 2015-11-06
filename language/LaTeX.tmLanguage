@@ -736,15 +736,10 @@
 					<key>name</key>
 					<string>punctuation.definition.function.latex</string>
 				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.arguments.latex</string>
-				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.function.latex</string>
+					<string>entity.name.function.macro.latex</string>
 				</dict>
 			</dict>
 			<key>match</key>
