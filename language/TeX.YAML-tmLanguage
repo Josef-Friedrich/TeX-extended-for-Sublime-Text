@@ -14,7 +14,8 @@ patterns:
   match: \\if[a-zA-Z@]*
 
 - comment: e. g. \answerfalse  \answertrue
-  name: keyword.control.boolean.tex
+  # Or?: keyword.control.boolean.tex
+  name: constant.language.tex
   match: \\[a-zA-Z@]*(true|false)
 
 - comment: Logic family (TeX Primitive Control Sequences)

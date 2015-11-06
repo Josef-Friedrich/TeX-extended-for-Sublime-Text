@@ -25,11 +25,11 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>\if which are created by \newifs</string>
+			<string>e. g. \answerfalse  \answertrue</string>
 			<key>match</key>
 			<string>\\[a-zA-Z@]*(true|false)</string>
 			<key>name</key>
-			<string>keyword.control.boolean.tex</string>
+			<string>constant.language.tex</string>
 		</dict>
 		<dict>
 			<key>comment</key>
