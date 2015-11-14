@@ -31,11 +31,11 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\%&lt;\*lua&gt;</string>
+			<string>\%&lt;\*.*lua.*&gt;</string>
 			<key>comment</key>
 			<string>Lua file</string>
 			<key>end</key>
-			<string>\%&lt;/lua&gt;</string>
+			<string>\%&lt;/.*lua.*&gt;</string>
 			<key>name</key>
 			<string>file.lua.dtx</string>
 			<key>patterns</key>

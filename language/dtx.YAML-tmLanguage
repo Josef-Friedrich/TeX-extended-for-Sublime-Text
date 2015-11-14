@@ -25,8 +25,8 @@ patterns:
 
 - comment: Lua file
   name: file.lua.dtx
-  begin: \%<\*lua>
-  end: \%</lua>
+  begin: \%<\*.*lua.*>
+  end: \%</.*lua.*>
   patterns:
     - comment: Macro code
       name: meta.macrocode.dtx
