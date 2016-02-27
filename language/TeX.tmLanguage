@@ -224,6 +224,12 @@
 			<string>support.function.general.lower.tex</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>(\\\{|\\\}|\\\$|\\&amp;|\\\#|\\_|\\%)</string>
+			<key>name</key>
+			<string>constant.character.escape.tex</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -264,12 +270,6 @@
 			<string>-?\.*\d\.*\d*(bp|cc|cm|dd|em|ex|in|mm|pc|pt|sp)</string>
 			<key>name</key>
 			<string>constant.numeric.dimension.tex</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(\\\{|\\\}|\\\$|\\&amp;|\\\#|\\_)</string>
-			<key>name</key>
-			<string>constant.character.escape.tex</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

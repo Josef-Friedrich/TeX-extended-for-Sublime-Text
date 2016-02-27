@@ -133,6 +133,13 @@ patterns:
   match: \\[a-z]+
 
 ##
+# Escape characters
+##
+
+- name: constant.character.escape.tex
+  match: (\\\{|\\\}|\\\$|\\&|\\\#|\\_|\\%)
+
+##
 # Comments
 ##
 
@@ -160,7 +167,4 @@ patterns:
 #- comment: Illegal characters in normal text.
 #  name: invalid.illegal
 #  match: (\{|\}|\$|&|\#|_)
-
-- name: constant.character.escape.tex
-  match: (\\\{|\\\}|\\\$|\\&|\\\#|\\_)
 ...
